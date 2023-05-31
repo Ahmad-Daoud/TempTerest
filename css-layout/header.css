@@ -1,0 +1,57 @@
+:root{
+    --maincolor : #D82A2A;
+    --secondcolor:#be2c2c ;
+}
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+.top{
+    border-bottom: solid 3px var(--maincolor);
+    background-color: #332F2C;
+
+}
+.titre{
+    color: var(--maincolor);
+    font-size : 40px;
+    text-align: right;
+
+}   
+.logo{
+    font-size: 80px; 
+}
+.textcotedivclass{
+    margin-top:20px !important;
+}
+.textcote{
+    color:  var(--maincolor);
+    font-size : 30px;
+    text-align: center;
+    margin-top: 30px !important;
+    font-family: 'Bebas neue' ;
+    transition-duration: 0.25s;
+}
+.textcote:hover {
+    font-size:35px;
+    transition-duration: 0.5s;
+    color: var(--secondcolor);
+    text-decoration: underline;
+}
+.usricodiv{
+    margin-top:15px !important;
+    text-align: center;
+}
+.usrico{
+    font-size: 40px;
+    color: var(--maincolor) ;
+    transition-duration: 0.25s;
+}
+.usrico:hover{
+    font-size: 45px;
+    transition-duration:0.5s;
+    color: var(--secondcolor);
+}
+.gridbox{
+    display: grid;
+    grid-template-areas: 'logo model model obj obj resaux resaux contact contact profile';
+}
