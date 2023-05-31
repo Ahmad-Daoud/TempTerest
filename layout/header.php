@@ -20,7 +20,7 @@
             <a href="" class=""><span class="textcote">Nos modèles</span></a>    
         </div>
         <div class="col-2  textcotedivclass">
-            <a href="" class=""><span class="textcote">Notre objectif </span></a>
+            <a href="" class=""><span class="textcote">Nos objectifs </span></a>
         </div>
         <div class="col-2 textcotedivclass">
             <a href="" class=""><span class="textcote">Nos réseaux</span></a>
