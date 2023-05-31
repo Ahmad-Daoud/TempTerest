@@ -73,7 +73,7 @@ Function Check_Account($page){
                         if (password_verify( $row["nom"], $name)){
                             if($psw = $row["motdepasse"]){
                                 
-                                // From the intcon exercise (to be changed to actual pages)
+                                // Code récupéré du TP intcon fait en cours de php (à changer pour Display les pages )
                                 // if($page == "acceuil"){
                                 //     DisplayAcceuil($row["nom"]);
                                 // }
