@@ -9,9 +9,9 @@
 <body>
     
 
-    <form action="index.php">
+    <form action="index.php" method="POST">
         <input type="text" name ="usernamelogin"  method="POST" placeholder="Nom">
-        <input type="text" name ="passwordlogin"  method="GET" placeholder="Mot de Passe">
+        <input type="text" name ="passwordlogin"  method="POST" placeholder="Mot de Passe">
         <input type="submit">
     </form>
     <a href="index.php?page=register"><button>Créer un compte</button></a>

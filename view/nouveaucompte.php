@@ -9,7 +9,7 @@
 <body>
     <!-- page qui permet de créer un nouveau compte -->
 
-    <form action="index.php" method="GET" >
+    <form action="index.php" method="POST" >
         <input type="text" name="nameval" placeholder="name">
         <input type="text" name="passwdval"placeholder="password">
         <input type="text" name="passwdverval"placeholder="verify password">

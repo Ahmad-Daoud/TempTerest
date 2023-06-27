@@ -8,32 +8,31 @@ DisplayHeader();
 
 
 
-if(isset($_GET["usernamelogin"]) && !empty($_GET["usernamelogin"])){
-    $usernamelogin = htmlspecialchars($_GET["usernamelogin"]);
+if(isset($_POST["usernamelogin"]) && !empty($_POST["usernamelogin"])){
+    $usernamelogin = htmlspecialchars($_POST["usernamelogin"]);
 }
 else{}
-if(isset($_GET["passwordlogin"]) && !empty($_GET["passwordlogin"])){
-    $passwordlogin = htmlspecialchars($_GET["passwordlogin"]);
+if(isset($_POST["passwordlogin"]) && !empty($_POST["passwordlogin"])){
+    $passwordlogin = htmlspecialchars($_POST["passwordlogin"]);
 }
 else{}
 
 
 if (!empty($usernamelogin) && !empty($passwordlogin) && isset($usernamelogin) && isset($passwordlogin)){
-
     Check_Login($usernamelogin, $passwordlogin);
 }
 
 // code pour créer compte
-if(isset($_GET["nameval"]) && !empty($_GET["nameval"])){
-    $name = htmlspecialchars($_GET["nameval"]);
+if(isset($_POST["nameval"]) && !empty($_POST["nameval"])){
+    $name = htmlspecialchars($_POST["nameval"]);
 }
 else{}
-if(isset($_GET["passwdval"]) && !empty($_GET["passwdval"])){
-    $passwd = htmlspecialchars($_GET["passwdval"]);
+if(isset($_POST["passwdval"]) && !empty($_POST["passwdval"])){
+    $passwd = htmlspecialchars($_POST["passwdval"]);
 }
 else{}
-if(isset($_GET["passwdverval"]) && !empty($_GET["passwdverval"])){
-    $passwdverval = htmlspecialchars($_GET["passwdverval"]);
+if(isset($_POST["passwdverval"]) && !empty($_POST["passwdverval"])){
+    $passwdverval = htmlspecialchars($_POST["passwdverval"]);
     
 }
 else{}
