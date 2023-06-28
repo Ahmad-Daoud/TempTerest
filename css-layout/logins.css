@@ -64,6 +64,6 @@ input[type=text]:focus{
     transition-duration: 2s;
 }
 .creercompte:hover {
-    color: #891b1b !important;
+    color: #d32a2a !important;
     transition-duration: 1s;
 }
