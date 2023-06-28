@@ -60,10 +60,10 @@ input[type=text]:focus{
     outline: none;  
   }
 .creercompte{
-    color: #6e1717 !important;
+    color: #932424 !important;
     transition-duration: 2s;
 }
 .creercompte:hover {
-    color: #d32a2a !important;
+    color: #f82d2d !important;
     transition-duration: 0.5s;
 }
