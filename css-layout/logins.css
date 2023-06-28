@@ -59,6 +59,9 @@ background: linear-gradient(90deg, rgba(230,71,71,1) 18%, rgba(216,42,42,1) 72%)
 input[type=text]:focus{
     outline: none;  
   }
+input[type=password]:focus{
+    outline: none;  
+}
 .creercompte{
     color: #932424 !important;
     transition-duration: 2s;
