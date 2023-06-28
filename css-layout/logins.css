@@ -60,7 +60,7 @@ input[type=text]:focus{
     outline: none;  
   }
 .creercompte{
-    color: #D82A2A !important;
+    color: #6e1717 !important;
     transition-duration: 2s;
 }
 .creercompte:hover {
