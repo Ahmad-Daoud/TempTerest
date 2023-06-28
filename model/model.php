@@ -26,7 +26,6 @@ Function Delete_Account(){
         $psw = htmlspecialchars($_COOKIE['hachedpsw']);
         global $db;
         $query = "SELECT * FROM login_details WHERE motdepasse LIKE '$psw' ";
-        
         try {
             $result = mysqli_query($db,$query);
                 if($result->num_rows > 0){
@@ -99,7 +98,8 @@ Function Check_Account($page){
                     }
                 }
                 else{
-                    echo 'pas de compte, veuillez accéder à la page login<br> <a href ="index.php?page=login"><button>Page login    </button></a>';
+                    $noaccount = true;
+                    // l'utilisateur accède au site sans compte
                 }
             }
             catch(Exception $e){
@@ -139,9 +139,8 @@ Function Check_Login($namelogin, $passwordlogin){
                     echo'Connecté, veuillez clicker pour accéder au site<br><br> <a href="index.php?page=acceuil"><button>Acceuil</button></a> <br>  <br>';
                     Create_Cookie($row["motdepasse"], $namelogin);
                 }
-                // le nom existe déja
                 else{
-                    echo'mauvais mot de passe.';
+                    $passwordfalse =true;
                 }
             }
         }
