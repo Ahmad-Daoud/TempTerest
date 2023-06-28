@@ -65,6 +65,5 @@ input[type=text]:focus{
 }
 .creercompte:hover {
     color: #891b1b !important;
-    font-size: 25px !important;
     transition-duration: 1s;
 }
