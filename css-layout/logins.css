@@ -35,6 +35,7 @@ background: linear-gradient(90deg, rgba(230,71,71,1) 18%, rgba(216,42,42,1) 72%)
     margin-bottom : 20px;
     height: 105px;
     color: #D82A2A;
+    text-shadow: 0 0 1px whitesmoke;
     background-color: #332f2c;
     text-align : center;
     width: 50%;
