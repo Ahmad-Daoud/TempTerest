@@ -1,0 +1,73 @@
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.usernameinput{
+    margin-top : 50px;
+    margin-bottom : 40px; 
+    height: 145px;
+    width: 500px;
+    font-size: 30px;
+    text-align: left; 
+    padding-left: 15px;
+    color: black;
+    font-family: 'Signika';
+    background: rgb(241,102,102);
+    background: linear-gradient(34deg, rgba(241,102,102,1) 0%, rgba(216,42,42,1) 39%);     border: black solid 4px ;
+}
+ .motdepasseinput{
+    margin-bottom : 20px; 
+    height: 145px;
+    width: 500px;
+    font-size: 30px;
+    text-align: left; 
+    padding-left: 15px;
+    color: #332F2C;
+    font-family: 'Signika';
+    text-shadow: 0 0 2px #a74141;
+    border : solid 4px #332F2C;
+    background: rgb(230,71,71);
+background: linear-gradient(90deg, rgba(230,71,71,1) 18%, rgba(216,42,42,1) 72%);
+} 
+
+.submitbtn{
+    margin-bottom : 20px;
+    height: 105px;
+    color: #D82A2A;
+    -webkit-text-stroke: 0.5px white;   
+    background-color: #332f2c;
+    text-align : center;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'arial';
+    font-size: 30px;
+    transition-duration: 5s;
+}
+.submitbtn:hover{
+    width: 100%;
+    margin-left:0%;
+    transition-duration : 1.5s;
+    filter: invert(20%);
+}
+::placeholder{
+    opacity: 1;
+}
+.auncompte{
+    font-size: 20px;
+    color: black;
+}
+input[type=text]:focus{
+    outline: none;  
+  }
+input[type=password]:focus{
+    outline: none;  
+}
+.logincompte{
+    color: #932424 !important;
+    transition-duration: 2s;
+}
+.logincompte:hover {
+    color: #f82d2d !important;
+    transition-duration: 0.5s;
+}

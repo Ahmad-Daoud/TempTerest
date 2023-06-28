@@ -13,7 +13,7 @@
     
 
 <div class="loginform d-flex">
-    <form action="index.php" method="POST" class ="">
+    <form action="index.php" method="POST">
         <input type="text" name ="usernamelogin"  method="POST" placeholder="Nom" class="usernameinput">
         <br>
         <input type="password" name ="passwordlogin"  method="POST" placeholder="Mot de Passe" class="motdepasseinput">
@@ -23,6 +23,7 @@
     <br>
 </div>
 <div class="d-flex pasdecompte"> Vous n'avez pas de compte? <a href="index.php?page=register" class="creercompte">   &nbsp Créer un compte</a></div>
+
     <?php
         global $usernamefalse;
         global $passwordfalse;
@@ -43,5 +44,6 @@
             }
         }
     ?>
+
 </body>
 </html>
