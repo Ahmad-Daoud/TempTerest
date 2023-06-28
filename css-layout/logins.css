@@ -40,7 +40,7 @@ background: linear-gradient(90deg, rgba(230,71,71,1) 18%, rgba(216,42,42,1) 72%)
     text-align : center;
     width: 50%;
     margin-left: 25%;
-    font-family: 'Signika';
+    font-family: 'arial';
     font-size: 30px;
     transition-duration: 5s;
 }
