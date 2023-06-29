@@ -17,9 +17,9 @@
         <form action="index.php" method="POST">
             <input type="text" name="nameval" placeholder="Name" class="usernameinput">
             <br>
-            <input type="text" name="passwdval"placeholder="Password"  class="motdepasseinput">
+            <input type="password" name="passwdval"placeholder="Password"  class="motdepasseinput">
             <br>
-            <input type="text" name="passwdverval"placeholder="Verify password" class="motdepasseinput">
+            <input type="password" name="passwdverval"placeholder="Verify password" class="motdepasseinput">
             <br>
             <input type="submit" class="submitbtn" value="Créer">
         </form>

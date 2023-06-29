@@ -1,7 +1,7 @@
 <?php 
 require("controller/controlleur.php");
 
-$db = new mysqli('localhost', 'root', '', 'Tempterest_login');
+$db = new mysqli('localhost', 'root', '', 'tempterest_login');
 global $passwdhached;
 
 Function Create_Cookie($passwordlogin, $namelogin){
@@ -91,8 +91,6 @@ Function Check_Account($page){
                                 // if ($page == "delete"){
                                 //     DisplayDelete($row["nom"]);
                                 // }
-
-
                             }
                         }
                     }
@@ -126,7 +124,6 @@ Function Check_Login($namelogin, $passwordlogin){
     $querylogin = "SELECT * FROM login_details WHERE nom LIKE '$namelogin'";
     try {
         $result = mysqli_query($db, $querylogin);
-        
     }
     catch(Exception $e){
         echo "une erreur c'est procurée : ".$e->getMessage();
@@ -203,11 +200,9 @@ Function Check_Register($name, $passwd){
         // on vérifie si le nom est présent dans la base de données
             if ($result == false){
                 $nameavailable=true;
-                
                 // le nom n'est pas présent est donc peut être enregistré
             }
             else{
-            
                 // on ne met pas le if sur le else qui se trouve au dessus de ce commentaire afin d'éviter le warning php au cas ou la variable $result est un booléen négatif (cas probable)
                 if($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
@@ -215,7 +210,6 @@ Function Check_Register($name, $passwd){
                             $nameavailable = false;
                             echo'le nom existe déjà';
                             // le nom existe déja
-                            
                         }
                     }    
                 }
