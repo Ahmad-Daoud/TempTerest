@@ -5,9 +5,6 @@ if (isset($_GET["page"]) && !empty($_GET["page"])){
 } 
 DisplayHeader();
 
-
-
-
 if(isset($_POST["usernamelogin"]) && !empty($_POST["usernamelogin"])){
     $usernamelogin = htmlspecialchars($_POST["usernamelogin"]);
 }
@@ -77,7 +74,7 @@ if(!empty($name) || !empty($passwd) || !empty($passwdverval)){
 if(isset($_GET["page"]) && !empty($_GET["page"])){
 
 if($page=='home' || $page=="acceuil"){
-    DisplayHome();
+    Check_Account($page)
 }
 else if ($page=="login"){
     DisplayLogin();
@@ -85,11 +82,14 @@ else if ($page=="login"){
 else if ($page == "register"){
     DisplayRegister();
 }
+else if($page)
 else{
     Display404();
 }
-
 }
-
-
+else {
+    // si il n'y a pas de paramètre ($page)
+    $nopage=true
+    Check_Account();
+}
 ?>

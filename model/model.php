@@ -64,18 +64,16 @@ Function Check_Account($page){
         $query = "SELECT * FROM login_details WHERE motdepasse LIKE '$psw'";
         if(isset($name) && isset($psw)){
             try{
-                
                 $result = $db->query($query);
                 if($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
-                        
                         if (password_verify( $row["nom"], $name)){
                             if($psw = $row["motdepasse"]){
-                                
+                                if($page == "acceuil" || $page = "home"){
+                                    DisplayHome();
+                                }
                                 // Code récupéré du TP intcon fait en cours de php (à changer pour Display les pages )
-                                // if($page == "acceuil"){
-                                //     DisplayAcceuil($row["nom"]);
-                                // }
+
                                 // if ($page == "baleine"){
                                 //     DisplayBaleine($row["nom"]);
                                 // }
@@ -92,25 +90,29 @@ Function Check_Account($page){
                                 //     DisplayDelete($row["nom"]);
                                 // }
                             }
+                            else{
+                                DisplayLogin();
+                            }
+                        }
+                        else{
+                            DisplayLogin();
                         }
                     }
                 }
                 else{
-                    $noaccount = true;
-                    // l'utilisateur accède au site sans compte
+                    DisplayLogin(); 
                 }
             }
             catch(Exception $e){
-                echo "une erreur c'est procurée : ". $e->getMessage();
-                echo '<br> <a href="index.php?page=login"><button>Acceder à la page login</button></a>';
+                DisplayLogin();
+                echo 'il y a eu une erreur lors de la selection du compte dans la base de données';
             }
         }
         else{
-            echo'<br> <a href="index.php?page=login"><button>Acceder à la page login</button></a>';
+            DisplayLogin();
         }
     }
     else{
-        echo 'pas de compte selectionné, veuillez rentrer les détails de votre compte';
         DisplayLogin();
     }
 }
@@ -143,7 +145,9 @@ Function Check_Login($namelogin, $passwordlogin){
         }
     }
     else if (isset($namelogin) && !empty($namelogin)) {
+        // à changer pour afficher un texte disant que le nom n'éxiste pas sur la page php nouveaucompte.php 
         echo'Le nom n existe pas dans la base de données';
+        DisplayLogin();
     }
 }
 
