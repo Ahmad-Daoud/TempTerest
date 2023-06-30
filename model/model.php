@@ -27,14 +27,14 @@ Function Delete_Account(){
         global $db;
         $query = "SELECT * FROM login_details WHERE motdepasse LIKE '$psw' ";
         try {
-            $result = mysqli_query($db,$query);
+            $result = $db->query($query);
                 if($result->num_rows > 0){
                     while($row = $result->fetch_assoc()){
                         if(password_verify($row["nom"], $name)){
-                            if($psw = $row["motdepasse"]){
+                            if($psw == $row["motdepasse"]){
                                 $query = "DELETE FROM login_details WHERE nom LIKE '".$row["nom"]."';";
                                 try{
-                                    $result2 = mysqli_query($db,$query);
+                                    $result2 = $db->query($query);
                                     echo 'Compte supprimé. <br> <a href="index.php?page=login"> <button> Page login </button></a> ' ;
                                 }
                                 catch(Exception $e){
@@ -65,7 +65,7 @@ Function Check_Account($page){
         if(isset($name) && isset($psw)){
             try{
                 
-                $result = mysqli_query($db,$query);
+                $result = $db->query($query);
                 if($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         
@@ -123,7 +123,7 @@ Function Check_Login($namelogin, $passwordlogin){
     global $db;
     $querylogin = "SELECT * FROM login_details WHERE nom LIKE '$namelogin'";
     try {
-        $result = mysqli_query($db, $querylogin);
+        $result = $db->query($querylogin);
     }
     catch(Exception $e){
         echo "une erreur c'est procurée : ".$e->getMessage();
@@ -163,7 +163,7 @@ Function Register($name, $passwdhached){
     global $db;
     $queryfinal = "INSERT INTO login_details (nom, motdepasse) VALUE ('$name' ,  '$passwdhached')";
         try{
-            mysqli_query($db, $queryfinal);
+            $db->query($queryfinal);
             echo 'Votre compte a été crée';
             DisplayLogin();
         }
@@ -188,7 +188,7 @@ Function Check_Register($name, $passwd){
     $queryverify = "SELECT * FROM login_details WHERE nom LIKE '$name'";
     try{
         // on récupère les lignes ou le nom apparait
-        $result = mysqli_query($db, $queryverify);
+        $result = $db->query($queryverify);
         $verify = true;
     }
     catch(Exception $e){
