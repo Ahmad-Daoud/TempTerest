@@ -31,7 +31,6 @@ if(isset($_POST["passwdval"]) && !empty($_POST["passwdval"])){
 else{}
 if(isset($_POST["passwdverval"]) && !empty($_POST["passwdverval"])){
     $passwdverval = htmlspecialchars($_POST["passwdverval"]);
-    
 }
 else{}
 

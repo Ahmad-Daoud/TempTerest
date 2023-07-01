@@ -176,7 +176,11 @@ Function Check_Login($namelogin, $passwordlogin){
     catch(Exception $e){
         echo "une erreur c'est procurée : ".$e->getMessage();
     }
-    if($result->num_rows > 0) {
+    if ($result == false) {
+        echo"Le compte n'est pas dans la base de données";
+        DisplayLogin();
+    }
+    else if($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             if ($row["nom"] == $namelogin){
                 if(password_verify($passwordlogin, $row["motdepasse"])){
@@ -270,7 +274,6 @@ Function Register($name, $passwdhached){
         try{
             $db->query($queryfinal);
             echo 'Votre compte a été crée';
-            DisplayLogin();
         }
         catch(Exception $e){
             echo "une erreur c'est procurée : ".$e->getMessage();
