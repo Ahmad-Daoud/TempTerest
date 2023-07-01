@@ -1,6 +1,4 @@
 <?php 
-
-
 $db = new mysqli('localhost', 'root', '', 'tempterest_login');
 global $passwdhached;
 
@@ -132,7 +130,7 @@ Function Check_Account_TF(){
                             if (password_verify( $row["nom"], $name)){
                                 if($psw = $row["motdepasse"]){
                                     DisplayPageModels();
-                                    Create_Cookie($psw, $row["nom"])
+                                    Create_Cookie($psw, $row["nom"]);
                                 }
                                 else{
                                     DisplayLoginPage();
