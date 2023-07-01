@@ -56,6 +56,7 @@ Function Delete_Account(){
 }
 
 Function Check_Account($page){
+    
     // Cette fonction est utilisée pour vérifier que l'utilisateur utilise un compte enregistré dans la base de données à chaque fois qu'il navigue entre les pages
     if ( !empty(htmlspecialchars($_COOKIE['hachednme'])) && !empty(htmlspecialchars($_COOKIE['hachedpsw']))){
         $name = htmlspecialchars($_COOKIE['hachednme']);
@@ -168,36 +169,45 @@ Function Check_Account_TF(){
 
 Function Check_Login($namelogin, $passwordlogin){
     // vérifier si le compte existe
+    
     global $db;
     $querylogin = "SELECT * FROM login_details WHERE nom LIKE '$namelogin'";
-    try {
-        $result = $db->query($querylogin);
+    if(isset($_COOKIE['hachednme']) && isset($_COOKIE['hachedpsw'])){
+        $page = "home";
+        Check_Account($page);   
+
     }
-    catch(Exception $e){
-        echo "une erreur c'est procurée : ".$e->getMessage();
-    }
-    if ($result == false) {
-        echo"Le compte n'est pas dans la base de données";
-        DisplayLogin();
-    }
-    else if($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            if ($row["nom"] == $namelogin){
-                if(password_verify($passwordlogin, $row["motdepasse"])){
-                    // la connexion réussie!!!!!
-                    echo'Connecté, veuillez clicker pour accéder au site<br><br> <a href="index.php?page=acceuil"><button>Acceuil</button></a> <br>  <br>';
-                    Create_Cookie($row["motdepasse"], $namelogin);
-                }
-                else{
-                    $passwordfalse =true;
+    else{
+
+        try {
+            $result = $db->query($querylogin);
+        }
+        catch(Exception $e){
+            echo "une erreur c'est procurée : ".$e->getMessage();
+        }
+        if ($result == false) {
+            echo"Le compte n'est pas dans la base de données";
+            DisplayLogin();
+        }
+        else if($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                if ($row["nom"] == $namelogin){
+                    if(password_verify($passwordlogin, $row["motdepasse"])){
+                        // la connexion réussie!!!!!
+                        echo'Connecté, veuillez clicker pour accéder au site<br><br> <a href="index.php?page=acceuil"><button>Acceuil</button></a> <br>  <br>';
+                        Create_Cookie($row["motdepasse"], $namelogin);
+                    }
+                    else{
+                        $passwordfalse =true;
+                    }
                 }
             }
         }
-    }
-    else if (isset($namelogin) && !empty($namelogin)) {
-        // à changer pour afficher un texte disant que le nom n'éxiste pas sur la page php nouveaucompte.php 
-        echo'Le nom n existe pas dans la base de données';
-        DisplayLogin();
+        else if (isset($namelogin) && !empty($namelogin)) {
+            // à changer pour afficher un texte disant que le nom n'éxiste pas sur la page php nouveaucompte.php 
+            echo'Le nom n existe pas dans la base de données';
+            DisplayLogin();
+        }
     }
 }
 

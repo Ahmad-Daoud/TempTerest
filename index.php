@@ -8,6 +8,7 @@ DisplayHeader();
 
 if(isset($_POST["usernamelogin"]) && !empty($_POST["usernamelogin"])){
     $usernamelogin = htmlspecialchars($_POST["usernamelogin"]);
+
 }
 else{}
 if(isset($_POST["passwordlogin"]) && !empty($_POST["passwordlogin"])){
@@ -18,8 +19,16 @@ else{}
 
 if (!empty($usernamelogin) && !empty($passwordlogin) && isset($usernamelogin) && isset($passwordlogin)){
     Check_Login($usernamelogin, $passwordlogin);
+    
 }
-
+else if(!empty($usernamelogin) && isset($usernamelogin) && !isset($passwordlogin)){
+    DisplayLogin();
+    echo'veuillez choisir un mot de passe';
+}
+else if(!empty($passwordlogin) && isset($passwordlogin) && !isset($usernamelogin)){
+    DisplayLogin();
+    echo"veuillez choisir un nom d'utilisateur";
+}
 // code pour créer compte
 if(isset($_POST["nameval"]) && !empty($_POST["nameval"])){
     $name = htmlspecialchars($_POST["nameval"]);
@@ -73,25 +82,31 @@ if(!empty($name) || !empty($passwd) || !empty($passwdverval)){
 
 if(isset($_GET["page"]) && !empty($_GET["page"])){
 
-if($page=='home' || $page=="acceuil"){
-    Check_Account($page);
-}
-else if ($page=="login"){
-    DisplayLogin();
-}
-else if ($page == "register"){
-    DisplayRegister();
-}
-else if($page == "contact"){
-    DisplayContact();
-}
-else{
-    Display404();
-}
+    if($page=='home' || $page=="acceuil"){
+        Check_Account($page);
+    }
+    else if ($page=="login"){
+        DisplayLogin();
+    }
+    else if ($page == "register"){
+        DisplayRegister();
+    }
+    else if($page == "contact"){
+        DisplayContact();
+    }
+    else{
+        Display404();
+    }
 }
 else {
-    if (isset($_POST['usernamelogin'])){
-        
+
+    if (isset($_POST['usernamelogin']) || isset($_POST['passwordlogin']) || isset ($_POST['passwdverval']) || isset($_POST['passwdval']) || isset($_POST['nameval'])){
+        if(isset($_POST['usernamelogin']) && empty($_POST['usernamelogin']) && isset($_POST['passwordlogin']) && empty($_POST['passwordlogin'])){
+            DisplayLogin();
+        }
+        else if(isset($_POST['nameval']) && empty($_POST['nameval']) && isset($_POST['passwdval']) && empty($_POST['passwdval']) && isset($_POST['passwdverval']) && empty($_POST['passwdverval'])){
+            DisplayRegister();
+        }
     }
     else{
         No_Page();
