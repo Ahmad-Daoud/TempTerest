@@ -19,6 +19,12 @@
         
         Function DisplayPageModels(){
             echo '<div class="nosmodels">Liste de modèles : </div>';
+            
+            ?>
+
+            <div style="color:red;"> yo </div>
+            <?php
+            
         }
         Function DisplayLoginPage(){
             require("../view/login.php");
