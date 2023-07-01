@@ -22,7 +22,7 @@
     </form>
     <br>
 </div>
-<div class="d-flex pasdecompte"> Vous n'avez pas de compte? <a href="index.php?page=register" class="creercompte">   &nbsp Créer un compte</a></div>
+<div class="d-flex pasdecompte"> Vous n'avez pas de compte? <a href="https://adaoud.dev/Tempterest/TempTerest/?page=register" class="creercompte">   &nbsp Créer un compte</a></div>
 
     <?php
         global $usernamefalse;

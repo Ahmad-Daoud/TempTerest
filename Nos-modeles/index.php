@@ -19,12 +19,10 @@
         global $AccountAuth;
         global $DisplayLogin;
         
-        if(isset($AccountAuth)){
-            if ($AccountAuth == True) {
-                echo'<div class="nosmodels">Nos modèles :</div>';
-            }
+        Function DisplayPageModels(){
+            echo 'models : ';
         }
-        else{
+        Function DisplayLoginPage(){
             require("../view/login.php");
         }
 

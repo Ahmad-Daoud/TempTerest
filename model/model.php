@@ -119,7 +119,7 @@ Function Check_Account($page){
 }
 
 Function Check_Account_TF(){
-    if(isset($_COOKIE['hachecnme']) && isset($_COOKIE['hachedpsw'])){
+    if(isset($_COOKIE['hachednme']) && isset($_COOKIE['hachedpsw'])){
         if (!empty(htmlspecialchars($_COOKIE['hachednme'])) && !empty(htmlspecialchars($_COOKIE['hachedpsw']))){
             $name = htmlspecialchars($_COOKIE['hachednme']);
             $psw = htmlspecialchars($_COOKIE['hachedpsw']);
@@ -131,37 +131,42 @@ Function Check_Account_TF(){
                     $result = $db->query($query);
                     if($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                            var_dump($row);
                             
                             if (password_verify( $row["nom"], $name)){
                                 if($psw = $row["motdepasse"]){
-                                    $AccountAuth=True;
+                                    DisplayPageModels();
                                 }
                                 else{
-                                    $DisplayLogin=true;
+                                    DisplayLoginPage();
                                 }
                             }
                             else{
-                                $DisplayLogin= true;
+                                DisplayLoginPage();
                             }
                         }
                     }
                     else{
-                        $DisplayLogin= true;
+                        DisplayLoginPage();
                     }
                 }
                 catch(Exception $e){
-                    $DisplayLogin= true;
+                    DisplayLoginPage();
                     echo 'il y a eu une erreur lors de la selection du compte dans la base de données';
                 }
             }
             else{    
+                DisplayLoginPage();
             }
         }
         else{
+            DisplayLoginPage();
         }
+        
     }
     else{
+        echo'ça test';
+
+
     }
 }
 
@@ -282,7 +287,7 @@ Function Register($name, $passwdhached){
     $queryfinal = "INSERT INTO login_details (nom, motdepasse) VALUE ('$name' ,  '$passwdhached')";
         try{
             $db->query($queryfinal);
-            echo 'Votre compte a été crée';
+            DisplayLogin();
         }
         catch(Exception $e){
             echo "une erreur c'est procurée : ".$e->getMessage();
