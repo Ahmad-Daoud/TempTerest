@@ -159,6 +159,61 @@ Function Check_Login($namelogin, $passwordlogin){
 
 
 
+Function No_Page(){
+    // Cette fonction est utilisée pour vérifier que l'utilisateur utilise un compte enregistré dans la base de données à chaque fois qu'il navigue entre les pages
+    if (isset($_COOKIE['hachednme']) && isset($_COOKIE['hachedpsw'])){
+        if ( !empty(htmlspecialchars($_COOKIE['hachednme'])) && !empty(htmlspecialchars($_COOKIE['hachedpsw']))){
+            $name = htmlspecialchars($_COOKIE['hachednme']);
+            $psw = htmlspecialchars($_COOKIE['hachedpsw']);
+            global $db;
+            $query = "SELECT * FROM login_details WHERE motdepasse LIKE '$psw'";
+            if(isset($name) && isset($psw)){
+                try{
+                    $result = $db->query($query);
+                    if($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            if (password_verify( $row["nom"], $name)){
+                                if($psw = $row["motdepasse"]){
+                                    DisplayHome();
+                                }
+                                else{
+                                    DisplayLogin();
+                                }
+                            }
+                            else{
+                                DisplayLogin();
+                            }
+                        }
+                    }
+                    else{
+                        DisplayLogin(); 
+                    }
+                }
+                catch(Exception $e){
+                    DisplayLogin();
+                    echo 'il y a eu une erreur lors de la selection du compte dans la base de données';
+                }
+            }
+            else{
+                DisplayLogin();
+            }
+        }
+        else{
+            DisplayLogin();
+        }
+    }
+    else{
+        DisplayLogin();
+    }
+}
+
+
+
+
+
+
+
+
 
 
 

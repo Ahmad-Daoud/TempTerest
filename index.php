@@ -91,7 +91,6 @@ else{
 }
 else {
     // si il n'y a pas de paramètre ($page)
-    $nopage=true
-    Check_Account();
+    No_Page(); 
 }
 ?>
