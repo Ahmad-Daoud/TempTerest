@@ -6,6 +6,7 @@
     text-decoration: underline;
     font-weight: 700;
     margin-top : 20px;  
+    margin-bottom: 40px;
 }
 .content {
     background-color: #f9f9f9;
@@ -59,7 +60,7 @@
     height: 94%;
     width: 100%;
   }
-  .author img {
+  .img {
     object-fit: cover;
     border-radius: 50%;
     height: 40px;
