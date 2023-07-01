@@ -124,12 +124,15 @@ Function Check_Account_TF(){
             $name = htmlspecialchars($_COOKIE['hachednme']);
             $psw = htmlspecialchars($_COOKIE['hachedpsw']);
             global $db;
+            
             $query = "SELECT * FROM login_details WHERE motdepasse LIKE '$psw'";
             if(isset($name) && isset($psw)){
                 try{
                     $result = $db->query($query);
                     if($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
+                            var_dump($row);
+                            
                             if (password_verify( $row["nom"], $name)){
                                 if($psw = $row["motdepasse"]){
                                     $AccountAuth=True;
@@ -152,16 +155,13 @@ Function Check_Account_TF(){
                     echo 'il y a eu une erreur lors de la selection du compte dans la base de données';
                 }
             }
-            else{
-                $DisplayLogin();
+            else{    
             }
         }
         else{
-            $DisplayLogin= true;
         }
     }
     else{
-        $DisplayLogin= true;
     }
 }
 
@@ -169,7 +169,6 @@ Function Check_Account_TF(){
 
 Function Check_Login($namelogin, $passwordlogin){
     // vérifier si le compte existe
-    
     global $db;
     $querylogin = "SELECT * FROM login_details WHERE nom LIKE '$namelogin'";
     if(isset($_COOKIE['hachednme']) && isset($_COOKIE['hachedpsw'])){

@@ -16,13 +16,17 @@
     require('../layout/header.php');
         require('../model/model.php');
         Check_Account_TF();
-        if ($AccountAuth = True) {
-            echo'<div class="nosmodels">Nos modèles :</div>';
+        global $AccountAuth;
+        global $DisplayLogin;
+        
+        if(isset($AccountAuth)){
+            if ($AccountAuth == True) {
+                echo'<div class="nosmodels">Nos modèles :</div>';
+            }
         }
-        else if($DisplayLogin==true){
+        else{
             require("../view/login.php");
         }
-
 
     ?>
 </body>
