@@ -49,3 +49,20 @@
     color: rgb(96, 96, 96);
     font-size: 12px;
   }
+  .thumbnail {
+    width: 100%;
+    height: 170px;
+  }
+  
+  .thumbnail img {
+    object-fit: cover;
+    height: 94%;
+    width: 100%;
+  }
+  .author img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
