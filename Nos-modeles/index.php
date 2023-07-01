@@ -17,12 +17,38 @@
         require('../model/model.php');
         Check_Account_TF();
         
-        Function DisplayPageModels(){
-            echo '<div class="nosmodels">Liste de modèles : </div>';
-            
+        Function DisplayPageModels(){            
             ?>
+            <div class="nosmodels">Liste de modèles : </div>
+            
 
-            <div style="color:red;"> yo </div>
+
+            <div class="videos">
+            <!-- a video starts -->
+                <div class="video">
+                <div class="thumbnail">
+                    <img src="https://img.youtube.com/vi/zUwB_imVjmg/maxresdefault.jpg" alt="" />
+                </div>
+                    <div class="details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/bpzY-S4DYlbTeOpY5hIA7qz_hcbMkgvLAugtwKBGTTImNnWAGudX0y53bo_fJZ0auypxrWkUiw=s88-c-k-c0x00ffffff-no-rj" alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Introverts & Content Creation | Sumudu Siriwardana
+                            </h3>
+                            <a href="">
+                                    Francesco Ciulla
+                            </a>
+                            <span> 2M Views • 3 Months Ago </span>
+                        </div>
+                    </div>
+
+                    </div>
+            <!-- a video Ends -->
+            </div>
+
+
             <?php
             
         }
