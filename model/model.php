@@ -1,5 +1,5 @@
 <?php 
-require("controller/controlleur.php");
+
 
 $db = new mysqli('localhost', 'root', '', 'tempterest_login');
 global $passwdhached;
@@ -117,6 +117,52 @@ Function Check_Account($page){
     }
 }
 
+Function Check_Account_TF(){
+    if(isset($_COOKIE['hachecnme']) && isset($_COOKIE['hachedpsw'])){
+        if (!empty(htmlspecialchars($_COOKIE['hachednme'])) && !empty(htmlspecialchars($_COOKIE['hachedpsw']))){
+            $name = htmlspecialchars($_COOKIE['hachednme']);
+            $psw = htmlspecialchars($_COOKIE['hachedpsw']);
+            global $db;
+            $query = "SELECT * FROM login_details WHERE motdepasse LIKE '$psw'";
+            if(isset($name) && isset($psw)){
+                try{
+                    $result = $db->query($query);
+                    if($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            if (password_verify( $row["nom"], $name)){
+                                if($psw = $row["motdepasse"]){
+                                    $AccountAuth=True;
+                                }
+                                else{
+                                    $DisplayLogin=true;
+                                }
+                            }
+                            else{
+                                $DisplayLogin= true;
+                            }
+                        }
+                    }
+                    else{
+                        $DisplayLogin= true;
+                    }
+                }
+                catch(Exception $e){
+                    $DisplayLogin= true;
+                    echo 'il y a eu une erreur lors de la selection du compte dans la base de données';
+                }
+            }
+            else{
+                $DisplayLogin();
+            }
+        }
+        else{
+            $DisplayLogin= true;
+        }
+    }
+    else{
+        $DisplayLogin= true;
+    }
+}
 
 
 

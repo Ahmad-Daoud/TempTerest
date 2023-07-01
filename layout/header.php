@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <link rel="stylesheet" href="css-layout/header.css">
+    <link rel="stylesheet" href="https://adaoud.dev/Tempterest/TempTerest/css-layout/header.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/1cdfadded9.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <div class="row top">
         <div class="col-2">
             <a href="">
-                <img src="logo.png" alt="" width="150px">   
+                <img src="https://adaoud.dev/Tempterest/TempTerest/logo.png" alt="" width="150px">   
             </a>
         </div>
         <div class="col-2 textcotedivclass">

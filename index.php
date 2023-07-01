@@ -1,4 +1,5 @@
 <?php
+require("controller/controlleur.php");
 require("model/model.php");
 if (isset($_GET["page"]) && !empty($_GET["page"])){
     $page = htmlspecialchars($_GET["page"]);
@@ -90,7 +91,11 @@ else{
 }
 }
 else {
-    // si il n'y a pas de paramètre ($page)
-    No_Page(); 
+    if (isset($_POST['usernamelogin'])){
+        
+    }
+    else{
+        No_Page();
+    }
 }
 ?>

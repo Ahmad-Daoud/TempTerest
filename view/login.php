@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accéder à votre compte</title>
-    <link rel="stylesheet" href="css-layout/logins.css">
+    <link rel="stylesheet" href="https://adaoud.dev/Tempterest/TempTerest/css-layout/logins.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Signika&display=swap" rel="stylesheet"></head>
@@ -40,7 +40,7 @@
         }
         if(isset($passwordfail)){
             if ($passwordfalse == true){
-                echo "Le mot de passe est incorrect";
+                echo "Le mot de passe est incorrect";           
             }
         }
     ?>
