@@ -82,7 +82,9 @@ else if ($page=="login"){
 else if ($page == "register"){
     DisplayRegister();
 }
-else if($page)
+else if($page == "contact"){
+    DisplayContact();
+}
 else{
     Display404();
 }

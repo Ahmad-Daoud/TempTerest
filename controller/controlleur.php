@@ -14,6 +14,9 @@ Function DisplayLogin(){
 Function DisplayFooter(){
     // layout footer
 }
+Function DisplayContact(){
+    // page contact
+}
 Function Display404(){
     // page d'erreur 404
 }
