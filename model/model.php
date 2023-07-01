@@ -18,8 +18,6 @@ Function Create_Cookie($passwordlogin, $namelogin){
         time() + 365 * 24 * 3600
     );
 }
-
-
 Function Delete_Account(){
     if ( !empty(htmlspecialchars($_COOKIE['hachednme'])) && !empty(htmlspecialchars($_COOKIE['hachedpsw']))){
         $name = htmlspecialchars($_COOKIE['hachednme']);
@@ -123,8 +121,7 @@ Function Check_Account_TF(){
         if (!empty(htmlspecialchars($_COOKIE['hachednme'])) && !empty(htmlspecialchars($_COOKIE['hachedpsw']))){
             $name = htmlspecialchars($_COOKIE['hachednme']);
             $psw = htmlspecialchars($_COOKIE['hachedpsw']);
-            global $db;
-            
+            global $db; 
             $query = "SELECT * FROM login_details WHERE motdepasse LIKE '$psw'";
             if(isset($name) && isset($psw)){
                 try{
@@ -135,6 +132,7 @@ Function Check_Account_TF(){
                             if (password_verify( $row["nom"], $name)){
                                 if($psw = $row["motdepasse"]){
                                     DisplayPageModels();
+                                    Create_Cookie($psw, $row["nom"])
                                 }
                                 else{
                                     DisplayLoginPage();
@@ -164,7 +162,7 @@ Function Check_Account_TF(){
         
     }
     else{
-        echo'ça test';
+        DisplayLoginPage();
 
 
     }
@@ -179,7 +177,6 @@ Function Check_Login($namelogin, $passwordlogin){
     if(isset($_COOKIE['hachednme']) && isset($_COOKIE['hachedpsw'])){
         $page = "home";
         Check_Account($page);   
-
     }
     else{
 

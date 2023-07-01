@@ -16,8 +16,6 @@
     require('../layout/header.php');
         require('../model/model.php');
         Check_Account_TF();
-        global $AccountAuth;
-        global $DisplayLogin;
         
         Function DisplayPageModels(){
             echo '<div class="nosmodels">Liste de modèles : </div>';
