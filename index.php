@@ -74,7 +74,7 @@ if(!empty($name) || !empty($passwd) || !empty($passwdverval)){
 if(isset($_GET["page"]) && !empty($_GET["page"])){
 
 if($page=='home' || $page=="acceuil"){
-    Check_Account($page)
+    Check_Account($page);
 }
 else if ($page=="login"){
     DisplayLogin();
