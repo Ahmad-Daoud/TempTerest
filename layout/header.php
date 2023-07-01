@@ -12,12 +12,12 @@
 <body>
     <div class="row top">
         <div class="col-2">
-            <a href="">
+            <a href="https://adaoud.dev/Tempterest/TempTerest/?page=home">
                 <img src="https://adaoud.dev/Tempterest/TempTerest/logo.png" alt="" width="150px">   
             </a>
         </div>
         <div class="col-2 textcotedivclass">
-            <a href="" class=""><span class="textcote">Nos modèles</span></a>    
+            <a href="https://adaoud.dev/Tempterest/TempTerest/Nos-modeles/" class=""><span class="textcote">Nos modèles</span></a>    
         </div>
         <div class="col-2  textcotedivclass">
             <a href="" class=""><span class="textcote">Nos objectifs </span></a>
