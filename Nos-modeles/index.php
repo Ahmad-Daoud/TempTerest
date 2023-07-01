@@ -20,7 +20,7 @@
         global $DisplayLogin;
         
         Function DisplayPageModels(){
-            echo 'models : ';
+            echo '<div class="nosmodels>"Liste de modèles : </div>';
         }
         Function DisplayLoginPage(){
             require("../view/login.php");
