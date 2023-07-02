@@ -25,7 +25,7 @@
   }
   .details {
     display: flex;
-    background: gray;
+    background: rgb(207, 207, 207);
 }
   .title{
     display: flex;
