@@ -54,6 +54,14 @@
                                         }
                                         $datemodifie = addLeadingZero($date);
                                         echo $datemodifie;
+                                        function addLeadingZero($variable) {
+                                            $paddedVariable = sprintf("%06d", $variable);
+                                            return $paddedVariable;
+                                        }
+                                        $paddedDate = addLeadingZero($date);
+                                        echo $paddedDate;
+
+
                                         ?>
                                     </div>
                                     <div class="details-division3">
