@@ -59,7 +59,7 @@
                         }
                     }
                     catch(Exception $e){
-                        echo 'erreur : ' .  $e->getMessage();
+                            echo '<div class="nosmodels"> aucun modèle en ligne </div>';
                     }
 
 

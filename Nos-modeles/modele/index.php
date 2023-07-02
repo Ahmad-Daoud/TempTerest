@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://adaoud.dev/Tempterest/TempTerest/logo.ico">
+    <link rel="stylesheet" href="https://adaoud.dev/Tempterest/TempTerest/css-layout/modele.css">
 </head>
 <body>
     <?php
@@ -25,6 +26,17 @@
                     while($row1 = $result1->fetch_assoc()) {
                         $titre = $row1["titre"];
                         include("header.php");
+                        ?>
+                        <!-- le preview du modèle en html -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- le preview du modèle en html -->
+                        <?php
                     }
                 }
             }
