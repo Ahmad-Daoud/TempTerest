@@ -28,13 +28,14 @@
                         $type = $row1["type"];
                         $auteur = $row1["auteur"];
                         $date = $row1["date"];
+                        $imgurl = $row1["imglinkpreview"];
                         include("header.php");
                         ?>
                         <!-- le preview du modèle en html -->
                         
                         <div class="division1">
                             <div class="showcase d-flex">
-                                s
+                                <img src="<?php echo$imgurl;?>" alt="preview image">
                             </div>
                             <div class="details">
                                 <div class="details-division1">
