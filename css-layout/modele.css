@@ -14,4 +14,5 @@
 }
 .division1, .division2, .division3{
     float: left;
+    margin-top: 60px;
 }
