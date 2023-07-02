@@ -26,7 +26,7 @@
         </form>
         <br>
 </div>  
-<div class="auncompte d-flex">Vous avez un compte? <a href="index.php?page=login" class="logincompte">  &nbsp Connectez vous!</a></div>
+<div class="auncompte d-flex">Vous avez un compte? <a href="?page=login" class="logincompte">  &nbsp Connectez vous!</a></div>
 
 <?php 
     global $namesetfail;
