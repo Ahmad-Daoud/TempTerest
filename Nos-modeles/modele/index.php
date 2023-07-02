@@ -25,6 +25,7 @@
                 if($result1->num_rows > 0) {
                     while($row1 = $result1->fetch_assoc()) {
                         $titre = $row1["titre"];
+                        $type = $row1["type"];
                         include("header.php");
                         ?>
                         <!-- le preview du modèle en html -->
@@ -34,7 +35,9 @@
                                 s
                             </div>
                             <div class="details">
-                                ss
+                                <?php
+                                echo"$titre"; 
+                                ?>
                             </div>
                         </div>
                         <div class="division2">s</div>
