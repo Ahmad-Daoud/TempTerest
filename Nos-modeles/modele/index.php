@@ -15,6 +15,7 @@
         }
         Function DisplayPage(){
             $title = "hello world";
+            include("header.php");
             if (isset($_GET["Id"])){
                 $id = $_GET["Id"];
                 global $db;
