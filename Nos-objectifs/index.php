@@ -10,6 +10,6 @@
     <?php
         require("../layout/header.php");
     ?>
-    Voici nos objectifs :
+        <div class="nosobjectifs">Voici nos objectifs : </div>
 </body>
 </html>

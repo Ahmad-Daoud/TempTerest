@@ -1,0 +1,11 @@
+.nosobjectifs{
+    color: #CD2929;
+    text-shadow: 0 0 2px whitesmoke;
+    font-family:  'Josefin Sans';
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 700;
+    margin-top : 20px;  
+    margin-bottom: 40px;
+    margin-left : 80px;
+}
