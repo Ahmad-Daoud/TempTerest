@@ -13,10 +13,10 @@
             require("../../view/login.php");
         }
         Function DisplayPage(){
-            $title = "hello world";
-            include("header.php");
+
             if (isset($_GET["Id"])){
                 $id = $_GET["Id"];
+                include("header.php");
                 global $db;
                 echo"the chosen id of your model is $id, right now we did not really finish the system yet  ";
                 $query1 = "SELECT * FROM models_details WHERE id LIKE $id";
