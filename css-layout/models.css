@@ -21,6 +21,7 @@
   .preview {
     width: 270px;
     margin-bottom: 30px;
+    border : 3px gray solid;
   }
   .details {
     display: flex;
