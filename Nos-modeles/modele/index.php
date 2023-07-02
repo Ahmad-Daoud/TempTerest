@@ -48,12 +48,6 @@
                                     </div>
                                     <div class="details-division2">
                                         <?php
-                                        function addLeadingZero($date) {
-                                            $paddedNumber = str_pad($date, 6, '0', STR_PAD_LEFT);
-                                            return $paddedNumber;
-                                        }
-                                        $datemodifie = addLeadingZero($date);
-                                        echo $datemodifie;
                                         function addLeadingZero($variable) {
                                             $paddedVariable = sprintf("%06d", $variable);
                                             return $paddedVariable;
