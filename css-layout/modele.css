@@ -38,18 +38,21 @@
     background-color: whitesmoke ;
 }
 .titre1{
-    
+
 }
 .type{
     font-size: 16px;
     opacity: 80%;
 }
 .details-division1{
+    float: left;
     width:30%;
 }
 .details-division2{
+    float: left;
     width:40%;
 }
 .details-division3{
+    float: left;
     width: 30%;
 }
