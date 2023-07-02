@@ -129,7 +129,7 @@ Function Check_Account_TF(){
                             
                             if (password_verify( $row["nom"], $name)){
                                 if($psw = $row["motdepasse"]){
-                                    DisplayPageModels();
+                                    DisplayPage();
                                     Create_Cookie($psw, $row["nom"]);
                                 }
                                 else{

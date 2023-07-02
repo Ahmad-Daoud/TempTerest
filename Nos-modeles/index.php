@@ -16,7 +16,7 @@
         require('../layout/header.php');
         require('../model/model.php');
         Check_Account_TF();
-        Function DisplayPageModels(){            
+        Function DisplayPage(){            
             ?>
             <div class="nosmodels">Liste de modèles : </div>
             
