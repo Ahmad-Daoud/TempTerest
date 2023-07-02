@@ -22,7 +22,6 @@
 }
 .showcase{
     width: 95%;
-    object-fit: cover;
     height: 700px; 
     border-bottom: 5px solid whitesmoke;
     border-left: 5px solid whitesmoke;
