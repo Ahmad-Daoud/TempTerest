@@ -35,15 +35,9 @@
                                 s
                             </div>
                             <div class="details">
-                                <div class="division1">
-                                <div class="showcase d-flex">
-                                    s
-                                </div>
-                                <div class="details">
-                                    
-                                </div>
-                                <div class="division2">s</div>
-                                <div class="division3">s</div>
+                                <div class="details-division1">s</div>
+                                <div class="details-division2">s</div>
+                                <div class="details-division3">s</div>
                             </div>
                         <div class="division2">s</div>
                         <div class="division3">s</div>
