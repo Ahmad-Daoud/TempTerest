@@ -35,12 +35,23 @@
                                 s
                             </div>
                             <div class="details">
-                                <?php
-                                echo"$titre"; 
-                                ?>
-                                <div class="type"> <?php echo"$type"?></div>
+                                <div class="details-division1">
+                                    <div class="titre">
+                                        <?php
+                                        echo"$titre"; 
+                                        ?>
+                                    </div>
+                                    <div class="type">
+                                        <?php echo"$type"?></div>
+                                    </div>
+                                </div>
+                                <div class="details-division2">
+                                    s
+                                </div>
+                                <div class="details-division2">
+                                    s
+                                </div>
                             </div>
-                        </div>
                         <div class="division2">s</div>
                         <div class="division3">s</div>
                         
