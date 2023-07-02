@@ -46,7 +46,7 @@
                                         <?php echo"$type"?></div>
                                     </div>
                                     <div class="details-division2">
-                                        
+                                        Template
                                     </div>
                                     <div class="details-division3">
                                         <div class="Autheur">
