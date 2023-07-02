@@ -38,6 +38,7 @@
                                 <?php
                                 echo"$titre"; 
                                 ?>
+                                <div class="type"> <?php echo"$type"?></div>
                             </div>
                         </div>
                         <div class="division2">s</div>
