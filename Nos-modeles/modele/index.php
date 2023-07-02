@@ -22,10 +22,10 @@
                 $query2 = "SELECT * FROM models_zones WHERE model_id LIKE '$id';";
                 $result1 = $db->query($query1);
                 if($result1->num_rows > 0) {
-                    while($row1 = $result1->fetch_assoc()) {
-                        $titre = $row1["titre"];
-                        include("header.php");
+                    while($row1 = $result1->fetch_assoc()) {   
                     }
+                    $titre = $row1["titre"];
+                    include("header.php");
                 }
             }
             else {
