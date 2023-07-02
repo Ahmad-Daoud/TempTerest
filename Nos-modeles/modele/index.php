@@ -14,7 +14,7 @@
             require("../../view/login.php");
         }
         Function DisplayPage(){
-            $title = "hello world"
+            $title = "hello world";
             if (isset($_GET["Id"])){
                 $id = $_GET["Id"];
                 global $db;
