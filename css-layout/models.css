@@ -20,6 +20,7 @@
   
   .preview {
     width: 270px;
+    box-shadow: rgba(208, 208, 208, 0.4) 5px 0px 10px, rgba(201, 201, 201, 0.3) 10px 5px 10px, rgba(193, 193, 193, 0.2) 10px 15px 10px, rgba(227, 227, 227, 0.1) 20px 15px 10px, rgba(232, 232, 232, 0.05) 25px 20px 10px;
     margin-bottom: 30px;
     border : 3px  rgb(202, 202, 202) solid;
   }
