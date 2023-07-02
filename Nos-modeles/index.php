@@ -16,38 +16,65 @@
     require('../layout/header.php');
         require('../model/model.php');
         Check_Account_TF();
-        global $db;
+        
         Function DisplayPageModels(){            
             ?>
             <div class="nosmodels">Liste de modèles : </div>
             
 
             <div class="previews">
-                
                  <?php
+                    $querymodels = "SELECT * FROM models_preview";
+                    try{
+                        global $db;
+                        $result = $db->query($querymodels);
+                        if($result->num_rows > 0){
+                            while($row = $result->fetch_assoc()){
+                                $urllinkpage =$row['urllinkpage'];
+                                $urlimgpreview =$row['urlimgpreview'];
+                                $titlemodel =$row['Title'];
+                                $type =$row['Type'];
+                                ob_start(); // Start output buffering                    
+                                    $output = '
+                                        <a href="'.$urllinkpage.'">
+                                            <div class="preview">
+                                                <div class="thumbnail">
+                                                    <img src="'. $urlimgpreview .'"/>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="title">
+                                                        '.$titlemodel.'
+                                                        <span>'.$type.'</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    ';
+                                ob_end_clean();
+                                echo $output; 
+                            }
+                        }
+                        else{
+                            echo '<div class="nosmodels"> aucun modèle en ligne </div>';
+                        }
+                    }
+                    catch(Exception $e){
+                        echo 'erreur : ' .  $e->getMessage();
+                    }
 
-                    ob_start(); // Start output buffering
+
+
+
+
+
+
                     
-                    $output = '
-                        <a href="'.$urllinkpage.'">
-                            <div class="preview">
-                                <div class="thumbnail">
-                                    <img src="'. $urlimgpreview .'"/>
-                                </div>
-                                <div class="details">
-                                    <div class="title">
-                                        '.$title.'
-                                        <span>'.$type.'</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    ';
-                    ob_end_clean();
-                    echo $output; 
                  ?>
             </div>
             
+
+
+
             <?php
             
         }
