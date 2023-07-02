@@ -1,4 +1,8 @@
 /* Cette page est la page utilisée pour la page qui affiche un seul modèles */
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
 .division1{
     width: 52%;
     margin-left: 5%;
@@ -15,4 +19,8 @@
 .division1, .division2, .division3{
     float: left;
     margin-top: 60px;
+}
+.showcase{
+    width: 90%;
+    height: 70%; 
 }

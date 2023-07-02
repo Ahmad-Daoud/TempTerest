@@ -29,7 +29,11 @@
                         ?>
                         <!-- le preview du modèle en html -->
                         
-                        <div class="division1">s</div>
+                        <div class="division1">
+                            <div class="showcase d-flex">
+
+                            </div>
+                        </div>
                         <div class="division2">s</div>
                         <div class="division3">s</div>
                         
