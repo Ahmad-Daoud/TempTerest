@@ -14,10 +14,11 @@
             require("../../view/login.php");
         }
         Function DisplayPage(){
+            $title = "hello world"
             if (isset($_GET["Id"])){
                 $id = $_GET["Id"];
                 global $db;
-                echo"the chosen id of your model is $id, right now we did not really finish the system yet";
+                echo"the chosen id of your model is $id, right now we did not really finish the system yet  ";
                 $query1 = "SELECT * FROM models_details WHERE id LIKE $id";
                 $query2 = "SELECT * FROM models_zones WHERE model_id LIKE $id";
             }
