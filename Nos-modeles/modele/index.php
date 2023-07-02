@@ -24,6 +24,7 @@
                 $query2 = "SELECT * FROM models_zones WHERE model_id LIKE $id";
                 $result1 = $db->query($query1);
                 if($result->num_rows > 0) {
+                    echo'sah';
                     while($row1 = $result1->fetch_assoc()) {
                         echo$row1["titre"];
 
