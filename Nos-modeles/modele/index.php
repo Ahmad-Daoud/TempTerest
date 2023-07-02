@@ -17,7 +17,7 @@
 
             if (isset($_GET["Id"])){
                 $id = $_GET["Id"];
-                include("header.php");
+                
                 global $db;
                 echo"the chosen id of your model is $id, right now we did not really finish the system yet  ";
                 $query1 = "SELECT * FROM models_details WHERE id LIKE '$id';";
@@ -28,7 +28,7 @@
                     echo'sah';
                     while($row1 = $result1->fetch_assoc()) {
                         echo$row1["titre"];
-
+                        include("header.php");
                     }
                 }
             }
