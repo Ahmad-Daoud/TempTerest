@@ -27,7 +27,7 @@
                 if($result1->num_rows > 0) {
                     echo'sah';
                     while($row1 = $result1->fetch_assoc()) {
-                        echo$row1["titre"];
+                        $titre = $row1["titre"];
                         include("header.php");
                     }
                 }
