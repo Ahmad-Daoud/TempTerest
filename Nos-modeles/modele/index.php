@@ -27,6 +27,7 @@
                         $titre = $row1["titre"];
                         $type = $row1["type"];
                         $auteur = $row1["auteur"];
+                        $date = $row1["date"];
                         include("header.php");
                         ?>
                         <!-- le preview du modèle en html -->
@@ -46,7 +47,7 @@
                                         <?php echo"$type"?></div>
                                     </div>
                                     <div class="details-division2">
-                                        Template
+                                        <?php echo"$date";?>
                                     </div>
                                     <div class="details-division3">
                                         <div class="Autheur">
