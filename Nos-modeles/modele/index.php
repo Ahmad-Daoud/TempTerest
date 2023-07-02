@@ -29,9 +29,9 @@
                         ?>
                         <!-- le preview du modèle en html -->
                         
-                        <div class="division1"></div>
-                        <div class="division2"></div>
-                        <div class="division3"></div>
+                        <div class="division1">s</div>
+                        <div class="division2">s</div>
+                        <div class="division3">s</div>
                         
                         
                         
