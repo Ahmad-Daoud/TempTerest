@@ -36,7 +36,7 @@
                             </div>
                             <div class="details">
                                 <div class="details-division1">
-                                    <div class="titre">
+                                    <div class="titre1">
                                         <?php
                                         echo"$titre"; 
                                         ?>
