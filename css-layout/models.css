@@ -49,7 +49,7 @@
   
   .thumbnail img {
     object-fit: cover;
-    height: 94%;
+    height: 100%;
     width: 100%;
   }
   .img {
