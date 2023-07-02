@@ -12,7 +12,7 @@
 <body>
     <div class="row top">
         <div class="col-2">
-            <a href="https://adaoud.dev/Tempterest/TempTerest/?page=home">
+            <a href="https://adaoud.dev/Tempterest/TempTerest/">
                 <img src="https://adaoud.dev/Tempterest/TempTerest/logo.png" alt="" width="150px">   
             </a>
         </div>
