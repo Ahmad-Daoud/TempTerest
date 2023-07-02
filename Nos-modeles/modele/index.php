@@ -35,22 +35,15 @@
                                 s
                             </div>
                             <div class="details">
-                                <div class="details-division1">
-                                    <div class="titre1">
-                                        <?php
-                                        echo"$titre"; 
-                                        ?>
-                                    </div>
-                                    <div class="type">
-                                        <?php echo"$type"?></div>
-                                    </div>
-                                </div>
-                                <div class="details-division2">
+                                <div class="division1">
+                                <div class="showcase d-flex">
                                     s
                                 </div>
-                                <div class="details-division2">
-                                    s
+                                <div class="details">
+                                    
                                 </div>
+                                <div class="division2">s</div>
+                                <div class="division3">s</div>
                             </div>
                         <div class="division2">s</div>
                         <div class="division3">s</div>
@@ -87,5 +80,25 @@
 
 
     ?>
+
+
+
+<!-- 
+<div class="details-division1">
+                                    <div class="titre1">
+                                        <?php
+                                        echo"$titre"; 
+                                        ?>
+                                    </div>
+                                    <div class="type">
+                                        <?php echo"$type"?></div>
+                                    </div>
+                                </div>
+                                <div class="details-division2">
+                                    s
+                                </div>
+                                <div class="details-division2">
+                                    s
+                                </div> -->
 </body>
 </html>
