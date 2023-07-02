@@ -17,16 +17,15 @@
 
             if (isset($_GET["Id"])){
                 $id = $_GET["Id"];
-                
                 global $db;
                 $query1 = "SELECT * FROM models_details WHERE id LIKE '$id';";
                 $query2 = "SELECT * FROM models_zones WHERE model_id LIKE '$id';";
                 $result1 = $db->query($query1);
                 if($result1->num_rows > 0) {
-
+                    while($row1 = $result1->fetch_assoc()) {
                         $titre = $row1["titre"];
                         include("header.php");
-
+                    }
                 }
             }
             else {
