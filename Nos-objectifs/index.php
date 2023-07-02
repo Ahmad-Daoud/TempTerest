@@ -9,5 +9,6 @@
     <?php
         require("../layout/header.php");
     ?>
+    Voici nos objectifs :
 </body>
 </html>
