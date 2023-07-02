@@ -49,7 +49,7 @@
                                     <div class="details-division2">
                                         <?php
                                         function addLeadingZero($variable) {
-                                            $paddedVariable = sprintf("%06d", $variable);
+                                            $paddedVariable = sprintf("%08d", $variable);
                                             return $paddedVariable;
                                         }
                                         $paddedDate = addLeadingZero($date);
