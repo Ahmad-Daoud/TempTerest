@@ -31,7 +31,7 @@
                         
                         <div class="division1">
                             <div class="showcase d-flex">
-
+                                s
                             </div>
                         </div>
                         <div class="division2">s</div>
