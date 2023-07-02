@@ -23,5 +23,8 @@
 .showcase{
     width: 95%;
     height: 700px; 
-    background-color: aliceblue;
+    border-bottom: 30px solid whitesmoke;
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
+    border-top: 5px solid whitesmoke;
 }
