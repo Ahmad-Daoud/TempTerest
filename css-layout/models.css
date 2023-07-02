@@ -21,7 +21,7 @@
   .preview {
     width: 270px;
     margin-bottom: 30px;
-    border : 3px #CD2929 solid;
+    border : 3px  rgb(202, 202, 202) solid;
   }
   .details {
     display: flex;
