@@ -1,15 +1,15 @@
 /* Cette page est la page utilisée pour la page qui affiche un seul modèles */
 .division1{
     width: 50%;
-    margin-left: 10%;
+    margin-left: 7%;
     text-align: center;
 }
 .division2{
-    width:20%;
+    width:23%;
     text-align: center;
 }
 .division3{
-    width:15%;
+    width:20%;
     text-align: center;
 }
 .division1, .division2, .division3{
