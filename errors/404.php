@@ -9,7 +9,6 @@
     <?php
         require("../layout/header.php");
         echo'page non trouvée';
-
     ?>
 </body>
 </html>
