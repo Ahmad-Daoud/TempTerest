@@ -23,8 +23,14 @@
 .showcase{
     width: 95%;
     height: 700px; 
-    border-bottom: 30px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
     border-left: 5px solid whitesmoke;
     border-right: 5px solid whitesmoke;
     border-top: 5px solid whitesmoke;
+}
+.details{
+    height :35px;
+    font-size: 18px;
+    text-align: left;
+    background-color: whitesmoke ;
 }

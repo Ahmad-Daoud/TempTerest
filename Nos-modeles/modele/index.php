@@ -33,6 +33,9 @@
                             <div class="showcase d-flex">
                                 s
                             </div>
+                            <div class="details">
+                                ss
+                            </div>
                         </div>
                         <div class="division2">s</div>
                         <div class="division3">s</div>
