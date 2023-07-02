@@ -16,35 +16,38 @@
     require('../layout/header.php');
         require('../model/model.php');
         Check_Account_TF();
-        
+        global $db;
         Function DisplayPageModels(){            
             ?>
             <div class="nosmodels">Liste de modèles : </div>
             
 
+            <div class="previews">
+                
+                 <?php
 
-            <div class="videos">
-            <!-- a video starts -->
-            <a href="">
-                <div class="video">
-                    <div class="thumbnail">
-                        <img src="https://img.youtube.com/vi/zUwB_imVjmg/maxresdefault.jpg" alt="" />
-                    </div>
-                    <div class="details">
-                        <div class="title">
-
-                                    Beauty in Autumn
-
-                            <span> HTML, CSS </span>
-                        </div>
-                    </div>
-
-                    </div>
-            </a>
-            <!-- a video Ends -->
+                    ob_start(); // Start output buffering
+                    
+                    $output = '
+                        <a href="'.$urllinkpage.'">
+                            <div class="preview">
+                                <div class="thumbnail">
+                                    <img src="'. $urlimgpreview .'"/>
+                                </div>
+                                <div class="details">
+                                    <div class="title">
+                                        '.$title.'
+                                        <span>'.$type.'</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    ';
+                    ob_end_clean();
+                    echo $output; 
+                 ?>
             </div>
-
-
+            
             <?php
             
         }
