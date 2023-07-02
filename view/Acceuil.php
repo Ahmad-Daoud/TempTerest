@@ -7,7 +7,7 @@
     <title>Bienvenue à Tempterest</title>
 </head>
 <body>
-    Bienvenue à l'acceuil
+    Bienvenu(e) à l'acceuil
 <?php
 
 ?>
