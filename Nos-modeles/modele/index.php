@@ -14,7 +14,11 @@
             require("../../view/login.php");
         }
         Function DisplayPage(){
-            echo 'yo';
+            ?> 
+
+                This is an html portion of the page
+
+            <?php
         }
 
 
