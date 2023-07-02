@@ -29,6 +29,7 @@
                         global $db;
                         $result = $db->query($querymodels);
                         if($result->num_rows > 0){
+                            echo'sah1';
                             while($row = $result->fetch_assoc()){
                                 $urllinkpage =$row['urllinkpage'];
                                 $urlimgpreview =$row['urlimgpreview'];
@@ -53,11 +54,14 @@
                                 ob_end_clean();
                                 echo $output; 
                             }
+                            echo'sah2';
                         }
+                        echo'sah3';
                         else{
                             echo '<div class="nosmodels"> aucun modèle en ligne </div>';
                         }
                     }
+                    echo'sah4';
                     catch(Exception $e){
                             echo '<div class="nosmodels"> aucun modèle en ligne </div>';
                     }
