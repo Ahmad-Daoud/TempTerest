@@ -12,3 +12,6 @@
     width:15%;
     text-align: center;
 }
+.division1, .division2, .division3{
+    float: left;
+}
