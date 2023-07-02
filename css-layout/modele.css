@@ -1,1 +1,11 @@
 /* Cette page est la page utilisée pour la page qui affiche un seul modèles */
+.division1{
+    width: 50%;
+    margin-left: 10%;
+}
+.division2{
+    width:20%
+}
+.division3{
+    width:15%;
+}
