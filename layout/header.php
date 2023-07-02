@@ -20,7 +20,7 @@
             <a href="https://adaoud.dev/Tempterest/TempTerest/Nos-modeles/" class=""><span class="textcote">Nos modèles</span></a>    
         </div>
         <div class="col-2  textcotedivclass">
-            <a href="" class=""><span class="textcote">Nos objectifs </span></a>
+            <a href="https://adaoud.dev/Tempterest/TempTerest/Nos-objectifs" class=""><span class="textcote">Nos objectifs </span></a>
         </div>
         <div class="col-2 textcotedivclass">
             <a href="" class=""><span class="textcote">Nos réseaux</span></a>
