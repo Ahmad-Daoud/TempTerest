@@ -25,6 +25,7 @@
   }
   .details {
     display: flex;
+    background: gray;
 }
   .title{
     display: flex;
