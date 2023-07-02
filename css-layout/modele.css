@@ -45,14 +45,19 @@
     opacity: 80%;
 }
 .details-division1{
-    float: left;
-    width:30%;
+    width: 22%;
+    margin-left: 5%;
+    text-align: center;
 }
 .details-division2{
-    float: left;
-    width:40%;
+    width:13%;
+    text-align: center;
 }
 .details-division3{
+    width:10%;
+    text-align: center;
+}
+.details-division1, .details-division2, .details-division3{
     float: left;
-    width: 30%;
+    margin-top: 60px;
 }
