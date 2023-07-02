@@ -47,7 +47,7 @@
                                     <div class="details-division2">
                                         s
                                     </div>
-                                    <div class="details-division2">
+                                    <div class="details-division3">
                                         s
                                     </div>
                                 </div>
