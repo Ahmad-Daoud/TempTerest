@@ -52,9 +52,15 @@
                                             $paddedVariable = sprintf("%08d", $variable);
                                             return $paddedVariable;
                                         }
-                                        $paddedDate = addLeadingZero($date);
-                                        echo $paddedDate;
 
+                                        function addSlash($variable) {
+                                            $modifiedVariable = substr_replace($variable, '/', 2, 0);
+                                            $modifiedVariable = substr_replace($modifiedVariable, '/', 5, 0);
+                                            return $modifiedVariable;
+                                        }
+                                        $paddedDate = addLeadingZero($date);
+                                        $modifiedDate = addSlash($paddedDate);
+                                        echo $modifiedDate;
 
                                         ?>
                                     </div>
