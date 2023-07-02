@@ -35,7 +35,7 @@
                         
                         <div class="division1">
                             <div class="showcase d-flex">
-                                <img src="<?php echo$imgurl;?>" style="width: 90%; height: auto; margin-left: 5%;"alt="preview image">
+                                <img src="<?php echo$imgurl;?>" style="width: 97%; height: auto; margin-left: 1.5%;"alt="preview image">
                             </div>
                             <div class="details">
                                 <div class="details-division1">
