@@ -44,13 +44,14 @@
                                     <div class="type">
                                         <?php echo"$type"?></div>
                                     </div>
+                                    <div class="details-division2">
+                                        s
+                                    </div>
+                                    <div class="details-division2">
+                                        s
+                                    </div>
                                 </div>
-                                <div class="details-division2">
-                                    s
-                                </div>
-                                <div class="details-division2">
-                                    s
-                                </div>
+                                
                             </div>
                         <div class="division2">s</div>
                         <div class="division3">s</div>
