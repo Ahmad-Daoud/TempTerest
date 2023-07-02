@@ -39,6 +39,9 @@
                         <?php
                     }
                 }
+                else{
+                    echo  "l'id ne correspond pas à un de nos modèles";
+                }
             }
             else {
                 echo'no id chosen';
