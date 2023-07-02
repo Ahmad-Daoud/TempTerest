@@ -26,6 +26,7 @@
                     while($row1 = $result1->fetch_assoc()) {
                         $titre = $row1["titre"];
                         $type = $row1["type"];
+                        $auteur = $row1["auteur"];
                         include("header.php");
                         ?>
                         <!-- le preview du modèle en html -->
@@ -45,10 +46,12 @@
                                         <?php echo"$type"?></div>
                                     </div>
                                     <div class="details-division2">
-                                        s
+                                        
                                     </div>
                                     <div class="details-division3">
-                                        s
+                                        <div class="Autheur">
+                                            <?php echo"$auteur"?>
+                                        </div>
                                     </div>
                                 </div>
                                 
