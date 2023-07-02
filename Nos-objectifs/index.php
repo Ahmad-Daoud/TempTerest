@@ -6,6 +6,8 @@
     <title>Les objectifs de Tempterest</title>
 </head>
 <body>
-    
+    <?php
+        require("../layout/header.php");
+    ?>
 </body>
 </html>
