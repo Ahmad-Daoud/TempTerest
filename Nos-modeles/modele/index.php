@@ -31,6 +31,17 @@
                         $imgurl = $row1["imglinkpreview"];
                         $description = $row1["description"] ;
                         include("urltitle.php");
+                        // l'utilisateur a déjà choisi les paramètres de son modèle
+                        if (isset($_POST["div1"])){
+                            
+                        }
+
+
+
+                        // l'utilisateur choisi les paramètres de son modèle
+                        else{
+
+                        
                         ?>
                         <!-- le preview du modèle en html -->
                         
@@ -113,8 +124,9 @@
                         
                         <!-- le preview du modèle en html -->
                         <?php
+
+                        }
                     }
-                }
                 else{
                     echo  "l'id ne correspond pas à un de nos modèles";
                 }
