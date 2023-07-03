@@ -92,28 +92,28 @@
                             ZONE 1
                             <br>
                             <input type="radio" id="div1empty" name="div1" value="empty" checked="checked">
-                            <label for="html">empty</label><br>
+                            <label for="div1empty">empty</label><br>
                             <input type="radio" id="div1text" name="div1" value="text">
-                            <label for="css">text</label><br>
+                            <label for="div1img">text</label><br>
                             <input type="radio" id="div1img" name="div1" value="img">
-                            <label for="javascript">img</label><br><br>
+                            <label for="div1text">img</label><br><br>
                             ZONE 2
                             <br>
                             <input type="radio" id="div2empty" name="div2" value="empty" checked="checked">
-                            <label for="html">empty</label><br>
+                            <label for="div2empty">empty</label><br>
                             <input type="radio" id="div2text" name="div2" value="text">
-                            <label for="css">text</label><br>
+                            <label for="div2img">text</label><br>
                             <input type="radio" id="div2img" name="div2" value="img">
-                            <label for="javascript">img</label><br><br>
+                            <label for="div2text">img</label><br><br>
 
                             ZONE 3
                             <br>
                             <input type="radio" id="div3empty" name="div3" value="empty" checked="checked">
-                            <label for="html">empty</label><br>
-                            <input type="radio" id="div3text" name="div3" value="img">
-                            <label for="css">img</label><br>
+                            <label for="div3empty">empty</label><br>
                             <input type="radio" id="div3img" name="div3" value="text">
-                            <label for="javascript">text</label><br><br>
+                            <label for="div3img">text</label><br><br>
+                            <input type="radio" id="div3text" name="div3" value="img">
+                            <label for="div3text">img</label><br>
                             <input type="submit" value="Submit">
                         </form> 
 
