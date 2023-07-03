@@ -76,8 +76,7 @@
                         <div class="division2">
 
                         <form action="index.php" method="POST">
-                            ZONE 1
-                            <br>
+                            ZONE 1<br>
                             <input type="radio" id="html" name="div1" value="empty">
                             <label for="html">empty</label><br>
                             <input type="radio" id="css" name="div1" value="img">
