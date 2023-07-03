@@ -76,13 +76,14 @@
                         <div class="division2">
 
                         <form action="index.php" method="POST" class="zoneform">
-                            ZONE 1<br>
+                            ZONE 1
+                            <br>
                             <input type="radio" id="html" name="div1" value="empty">
                             <label for="html">empty</label><br>
-                            <input type="radio" id="css" name="div1" value="img">
-                            <label for="css">img</label><br>
-                            <input type="radio" id="javascript" name="div1" value="text">
-                            <label for="javascript">text</label><br><br>
+                            <input type="radio" id="css" name="div1" value="text">
+                            <label for="css">text</label><br>
+                            <input type="radio" id="javascript" name="div1" value="img">
+                            <label for="javascript">img</label><br><br>
                             ZONE 2
                             <br>
                             <input type="radio" id="html" name="div2" value="empty">
