@@ -29,6 +29,7 @@
                         $auteur = $row1["auteur"];
                         $date = $row1["date"];
                         $imgurl = $row1["imglinkpreview"];
+                        $description = $row1["description"] 
                         include("urltitle.php");
                         ?>
                         <!-- le preview du modèle en html -->
@@ -71,7 +72,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="description"> <?php echo$row["description"] . lol;?></div>
+                                <div class="description"> <?php echo $description;?></div>
                             </div>
                             
                         <div class="division2">
