@@ -4,11 +4,12 @@
     justify-content: center;
 }
 .division1{
-    width: 52%;
+    width: 49%;
     margin-left: 5%;
     text-align: center;
 }
 .division2{
+    margin-right:3px;
     width:23%;
     text-align: center;
 }
