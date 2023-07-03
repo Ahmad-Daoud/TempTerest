@@ -77,7 +77,7 @@
                             
                         <div class="division2">
 
-                        <form action="index.php" method="POST" class="zoneform">
+                        <form action="<?php echo $id;?>" method="POST" class="zoneform">
                             ZONE 1
                             <br>
                             <input type="radio" id="div1empty" name="div1" value="empty">
