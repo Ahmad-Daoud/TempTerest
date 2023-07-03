@@ -33,7 +33,7 @@
                         include("urltitle.php");
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
-                            
+                            echo 's';
                         }
 
 
@@ -143,7 +143,7 @@
 
 
         }
-
+    }
 
 
 
