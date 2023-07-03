@@ -67,6 +67,8 @@
 }
 .description{
     background-color: gray;
+    color: white;
+    font-size: 17px;
     width: 95%;
     padding-left: 30px;
     padding-bottom: 60px;
