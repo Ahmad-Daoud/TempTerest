@@ -91,7 +91,7 @@
                         <form action="?Id=<?php echo $id;?>" method="POST" class="zoneform">
                             ZONE 1
                             <br>
-                            <input type="radio" id="div1empty" name="div1" value="empty">
+                            <input type="radio" id="div1empty" name="div1" value="empty" checked="checked">
                             <label for="html">empty</label><br>
                             <input type="radio" id="div1text" name="div1" value="text">
                             <label for="css">text</label><br>
@@ -99,7 +99,7 @@
                             <label for="javascript">img</label><br><br>
                             ZONE 2
                             <br>
-                            <input type="radio" id="div2empty" name="div2" value="empty">
+                            <input type="radio" id="div2empty" name="div2" value="empty" checked="checked">
                             <label for="html">empty</label><br>
                             <input type="radio" id="div2text" name="div2" value="text">
                             <label for="css">text</label><br>
@@ -108,7 +108,7 @@
 
                             ZONE 3
                             <br>
-                            <input type="radio" id="div3empty" name="div3" value="empty">
+                            <input type="radio" id="div3empty" name="div3" value="empty" checked="checked">
                             <label for="html">empty</label><br>
                             <input type="radio" id="div3text" name="div3" value="img">
                             <label for="css">img</label><br>
