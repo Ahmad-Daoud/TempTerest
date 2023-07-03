@@ -78,28 +78,28 @@
                         <form action="index.php" method="POST" class="zoneform">
                             ZONE 1
                             <br>
-                            <input type="radio" id="html" name="div1" value="empty">
+                            <input type="radio" id="div1empty" name="div1" value="empty">
                             <label for="html">empty</label><br>
-                            <input type="radio" id="css" name="div1" value="text">
+                            <input type="radio" id="div1text" name="div1" value="text">
                             <label for="css">text</label><br>
-                            <input type="radio" id="javascript" name="div1" value="img">
+                            <input type="radio" id="div1img" name="div1" value="img">
                             <label for="javascript">img</label><br><br>
                             ZONE 2
                             <br>
-                            <input type="radio" id="html" name="div2" value="empty">
+                            <input type="radio" id="div2empty" name="div2" value="empty">
                             <label for="html">empty</label><br>
-                            <input type="radio" id="css" name="div2" value="text">
+                            <input type="radio" id="div2text" name="div2" value="text">
                             <label for="css">text</label><br>
-                            <input type="radio" id="javascript" name="div2" value="img">
+                            <input type="radio" id="div2img" name="div2" value="img">
                             <label for="javascript">img</label><br><br>
 
                             ZONE 3
                             <br>
-                            <input type="radio" id="html" name="div3" value="empty">
+                            <input type="radio" id="div3empty" name="div3" value="empty">
                             <label for="html">empty</label><br>
-                            <input type="radio" id="css" name="div3" value="img">
+                            <input type="radio" id="div3text" name="div3" value="img">
                             <label for="css">img</label><br>
-                            <input type="radio" id="javascript" name="div3" value="text">
+                            <input type="radio" id="div3img" name="div3" value="text">
                             <label for="javascript">text</label><br><br>
                             <input type="submit" value="Submit">
                         </form> 
