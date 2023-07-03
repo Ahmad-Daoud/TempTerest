@@ -29,7 +29,7 @@
                         $auteur = $row1["auteur"];
                         $date = $row1["date"];
                         $imgurl = $row1["imglinkpreview"];
-                        $description = $row1["description"] 
+                        $description = $row1["description"] ;
                         include("urltitle.php");
                         ?>
                         <!-- le preview du modèle en html -->
