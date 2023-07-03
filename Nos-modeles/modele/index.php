@@ -73,6 +73,7 @@
                                 </div>
                                 
                             </div>
+                            <div class="description"></div>
                         <div class="division2">
 
                         <form action="index.php" method="POST" class="zoneform">
