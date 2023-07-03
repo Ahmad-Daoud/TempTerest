@@ -71,7 +71,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="description"> <?php echo$row["description"];?></div>
+                                <div class="description"> <?php echo$row["description"] . lol;?></div>
                             </div>
                             
                         <div class="division2">
