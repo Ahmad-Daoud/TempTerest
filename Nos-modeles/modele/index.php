@@ -77,7 +77,7 @@
 
                         <form action="index.php" method="POST">
                             ZONE 1<br>
-                            <input type="text">
+                            <input type="text"><br>
                             <input type="radio" id="html" name="div1" value="empty">
                             <label for="html">empty</label><br>
                             <input type="radio" id="css" name="div1" value="img">
@@ -86,7 +86,7 @@
                             <label for="javascript">text</label><br><br>
                             ZONE 2
                             <br>
-                            <input type="text">
+                            <input type="text"><br>
                             <input type="radio" id="html" name="div2" value="empty">
                             <label for="html">empty</label><br>
                             <input type="radio" id="css" name="div2" value="text">
@@ -96,7 +96,7 @@
 
                             ZONE 3
                             <br>
-                            <input type="text">
+                            <input type="text"><br>
                             <input type="radio" id="html" name="div3" value="empty">
                             <label for="html">empty</label><br>
                             <input type="radio" id="css" name="div3" value="img">
