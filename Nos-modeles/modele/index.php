@@ -73,7 +73,38 @@
                                 </div>
                                 
                             </div>
-                        <div class="division2">s</div>
+                        <div class="division2">
+
+                        <form action="index.php" method="POST">
+                            ZONE 1
+                            <br>
+                            <input type="radio" id="html" name="div1" value="empty">
+                            <label for="html">empty</label><br>
+                            <input type="radio" id="css" name="div1" value="img">
+                            <label for="css">img</label><br>
+                            <input type="radio" id="javascript" name="div1" value="text">
+                            <label for="javascript">text</label><br><br>
+                            ZONE 2
+                            <br>
+                            <input type="radio" id="html" name="div2" value="empty">
+                            <label for="html">empty</label><br>
+                            <input type="radio" id="css" name="div2" value="text">
+                            <label for="css">text</label><br>
+                            <input type="radio" id="javascript" name="div2" value="img">
+                            <label for="javascript">img</label><br><br>
+
+                            ZONE 3
+                            <br>
+                            <input type="radio" id="html" name="div3" value="empty">
+                            <label for="html">empty</label><br>
+                            <input type="radio" id="css" name="div3" value="img">
+                            <label for="css">img</label><br>
+                            <input type="radio" id="javascript" name="div3" value="text">
+                            <label for="javascript">text</label><br><br>
+                            <input type="submit" value="Submit">
+                        </form> 
+
+                        </div>
                         <div class="division3">s</div>
                         
                         
