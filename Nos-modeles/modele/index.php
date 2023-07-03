@@ -111,9 +111,9 @@
                             <input type="radio" id="div3empty" name="div3" value="empty" checked="checked">
                             <label for="div3empty">empty</label><br>
                             <input type="radio" id="div3img" name="div3" value="text">
-                            <label for="div3img">text</label><br><br>
+                            <label for="div3img">text</label><br>
                             <input type="radio" id="div3text" name="div3" value="img">
-                            <label for="div3text">img</label><br>
+                            <label for="div3text">img</label><br> <br>
                             <input type="submit" value="Submit">
                         </form> 
 
