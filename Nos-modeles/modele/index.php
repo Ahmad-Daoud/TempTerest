@@ -87,7 +87,37 @@
                             </div>
                         <div class="division2">
                             <form action="?Id=<?php echo $id;?>" method="POST" class="zoneform">
-                                ZONE 1
+                            <?php
+                                $num = $id;
+
+                                for ($i = 1; $i <= $num; $i++) {
+                                    echo '
+                                ZONE '.$i.'
+                                <br>
+                                <input type="radio" id="div'.$i.'empty" name="div'.$i.'" value="empty" checked="checked">
+                                <label for="div'.$i.'empty">empty</label><br>
+                                <input type="radio" id="div'.$i.'text" name="div'.$i.'" value="text">
+                                <label for="div'.$i.'img">text</label><br>
+                                <input type="radio" id="div'.$i.'img" name="div'.$i.'" value="img">
+                                <label for="div'.$i.'text">img</label><br><br>';
+                                }
+                            ?>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                <!-- ZONE 1
                                 <br>
                                 <input type="radio" id="div1empty" name="div1" value="empty" checked="checked">
                                 <label for="div1empty">empty</label><br>
@@ -111,13 +141,10 @@
                                 <label for="div3img">text</label><br>
                                 <input type="radio" id="div3text" name="div3" value="img">
                                 <label for="div3text">img</label><br> <br>
-                                <input type="submit" value="Submit">
+                                <input type="submit" value="Submit"> -->
                             </form> 
                         </div>
                         <div class="division3">division 3 </div>
-                        
-                        
-                        
                         <!-- le preview du modèle en html -->
                         <?php
 
