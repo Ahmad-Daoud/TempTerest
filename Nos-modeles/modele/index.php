@@ -27,7 +27,7 @@
             }
         
             // Output the highest zone number
-            echo "The highest zone number is: " . $highestZone;
+            return $highestZone
         }
         function DisplayPage(){
 
