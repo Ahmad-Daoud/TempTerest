@@ -45,6 +45,7 @@
                         $result2 = $db->query($query2);
                         while ($row = $result2->fetch_assoc()) {
                             $num = find_highest_zone($row["html_code"]);
+                            echo $row["html_code"];
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
