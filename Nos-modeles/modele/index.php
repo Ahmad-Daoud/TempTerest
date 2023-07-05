@@ -14,15 +14,16 @@
         function DisplayLoginPage(){
             require("../../view/login.php");
         }
-        function find_highest_zone($template) {
+        function find_highest_zone($template){
             // Extract the zone numbers from the template
             preg_match_all('/zone(\d+)/i', $template, $matches);
         
             // Get the highest zone number
             $zoneNumbers = $matches[1];
             $highestZone = max($zoneNumbers);
-            echo $highestZone . "ssss";
-            return $highestZone;
+        
+            // Output the highest zone number
+            echo "The highest zone number is: " . $highestZone;
         }
         function DisplayPage(){
 
