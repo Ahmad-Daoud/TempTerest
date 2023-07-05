@@ -115,9 +115,9 @@
                                 <input type="radio" id="div'.$i.'empty" name="div'.$i.'" value="empty" checked="checked">
                                 <label for="div'.$i.'empty">empty</label><br>
                                 <input type="radio" id="div'.$i.'text" name="div'.$i.'" value="text">
-                                <label for="div'.$i.'img">text</label><br>
+                                <label for="div'.$i.'text">text</label><br>
                                 <input type="radio" id="div'.$i.'img" name="div'.$i.'" value="img">
-                                <label for="div'.$i.'text">img</label><br><br>';
+                                <label for="div'.$i.'img">img</label><br><br>';
                                 }
                             ?>
                                 <input type="submit">
