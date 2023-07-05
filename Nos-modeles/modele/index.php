@@ -32,8 +32,12 @@
                         include("urltitle.php");
                         $query2 = "SELECT * FROM model_code WHERE model_id LIKE '$id' ; ";
                         $result2 = $db->query($query2);
-                        echo $query2;
-                        var_dump($result2);
+                        while ($row = $result2->fetch_assoc()) {
+                            // Access the data from each row
+                            echo $row['html'] . '<br>';
+                            echo $row['css'] . '<br>';
+                            // ...
+                        }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
                             echo 's';
