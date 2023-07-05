@@ -14,14 +14,17 @@
         function DisplayLoginPage(){
             require("../../view/login.php");
         }
-        function find_highest_zone($template){
-            echo $template;
-            // Extract the zone numbers from the template
-            preg_match_all('/zone(\d+)/i', $template, $matches);
+        function find_highest_zone($template) {
+            $highestZone = 0;
         
-            // Get the highest zone number
-            $zoneNumbers = $matches[1];
-            $highestZone = max($zoneNumbers);
+            // Find all div classes starting with "div" followed by a number
+            preg_match_all('/div(\d+)/i', $template, $matches);
+        
+            if (!empty($matches[1])) {
+                // Get the highest zone number
+                $zoneNumbers = $matches[1];
+                $highestZone = max($zoneNumbers);
+            }
         
             // Output the highest zone number
             echo "The highest zone number is: " . $highestZone;
