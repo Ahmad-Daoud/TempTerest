@@ -34,7 +34,7 @@
                         $result2 = $db->query($query2);
                         while ($row = $result2->fetch_assoc()) {
                             // Access the data from each row
-                            echo $row['html'] . '<br>';
+                            echo $row['id'] . '<br>';
                             echo $row['css'] . '<br>';
                             // ...
                         }
