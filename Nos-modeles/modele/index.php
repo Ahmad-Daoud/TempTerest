@@ -27,7 +27,7 @@
             }
         
             // Output the highest zone number
-            return $highestZone
+            return $highestZone;
         }
         function DisplayPage(){
 
