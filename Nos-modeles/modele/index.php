@@ -33,10 +33,7 @@
                         $query2 = "SELECT * FROM model_code WHERE model_id LIKE '$id' ; ";
                         $result2 = $db->query($query2);
                         while ($row = $result2->fetch_assoc()) {
-                            // Access the data from each row
-                            echo $row['id'] . '<br>';
-                            echo $row['css'] . '<br>';
-                            // ...
+                            $num = find_highest_zone($row["html_code"]);
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
@@ -95,8 +92,6 @@
                         <div class="division2">
                             <form action="?Id=<?php echo $id;?>" method="POST" class="zoneform">
                             <?php
-
-                                $num = find_highest_zone($result2["html"]);
                                 for ($i = 1; $i <= $num; $i++) {
                                     echo '
                                 ZONE '.$i.'
