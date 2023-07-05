@@ -20,7 +20,6 @@
                 $id = $_GET["Id"];
                 global $db;
                 $query1 = "SELECT * FROM models_details WHERE id LIKE '$id';";
-                $query2 = "SELECT * FROM models_zones WHERE model_id LIKE '$id';";
                 $result1 = $db->query($query1);
                 if($result1->num_rows > 0) {
                     while($row1 = $result1->fetch_assoc()) {
@@ -31,12 +30,14 @@
                         $imgurl = $row1["imglinkpreview"];
                         $description = $row1["description"] ;
                         include("urltitle.php");
+                        $query2 = "SELECT * FROM model_code WHERE model_id LIKE '$id' ; ";
+                        $result2 = $db->query($query2);
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
                             echo 's';
                         }
 
-
+                        
 
                         // l'utilisateur choisi les paramètres de son modèle
                         else{
@@ -88,7 +89,8 @@
                         <div class="division2">
                             <form action="?Id=<?php echo $id;?>" method="POST" class="zoneform">
                             <?php
-                                $num = $id;
+
+                                $num = find_highest_zone($result2["html"]);
                                 for ($i = 1; $i <= $num; $i++) {
                                     echo '
                                 ZONE '.$i.'
@@ -122,7 +124,17 @@
 
 
             <?php
+                Function find_highest_zone($template){
+                    // Extract the zone numbers from the template
+                    preg_match_all('/zone(\d+)/i', $template, $matches);
 
+                    // Get the highest zone number
+                    $zoneNumbers = $matches[1];
+                    $highestZone = max($zoneNumbers);
+
+                    // Output the highest zone number
+                    echo "The highest zone number is: " . $highestZone;
+                }
 
 
 
