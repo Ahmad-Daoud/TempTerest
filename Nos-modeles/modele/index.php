@@ -120,6 +120,7 @@
                                 <label for="div'.$i.'text">img</label><br><br>';
                                 }
                             ?>
+                                <input type="submit">
                             </form> 
                         </div>
                         <div class="division3">division 3 </div>
