@@ -120,6 +120,7 @@
                                 <label for="div'.$i.'img">img</label><br><br>';
                                 }
                             ?>
+                                <input type="hidden" value="<?php $id?>">
                                 <input type="submit">
                             </form> 
                         </div>
