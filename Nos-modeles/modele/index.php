@@ -15,6 +15,7 @@
             require("../../view/login.php");
         }
         function find_highest_zone($template){
+            echo $template;
             // Extract the zone numbers from the template
             preg_match_all('/zone(\d+)/i', $template, $matches);
         
