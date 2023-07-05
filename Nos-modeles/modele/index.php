@@ -11,10 +11,21 @@
         require("../../layout/header.php");
         require("../../model/model.php");
         Check_Account_TF();
-        Function DisplayLoginPage(){
+        function DisplayLoginPage(){
             require("../../view/login.php");
         }
-        Function DisplayPage(){
+        function find_highest_zone($template){
+            // Extract the zone numbers from the template
+            preg_match_all('/zone(\d+)/i', $template, $matches);
+
+            // Get the highest zone number
+            $zoneNumbers = $matches[1];
+            $highestZone = max($zoneNumbers);
+
+            // Output the highest zone number
+            echo "The highest zone number is: " . $highestZone;
+        }
+        function DisplayPage(){
 
             if (isset($_GET["Id"])){
                 $id = $_GET["Id"];
@@ -125,17 +136,7 @@
 
 
             <?php
-                Function find_highest_zone($template){
-                    // Extract the zone numbers from the template
-                    preg_match_all('/zone(\d+)/i', $template, $matches);
-
-                    // Get the highest zone number
-                    $zoneNumbers = $matches[1];
-                    $highestZone = max($zoneNumbers);
-
-                    // Output the highest zone number
-                    echo "The highest zone number is: " . $highestZone;
-                }
+                
 
 
 
