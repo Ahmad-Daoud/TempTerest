@@ -32,6 +32,7 @@
                         include("urltitle.php");
                         $query2 = "SELECT * FROM model_code WHERE model_id LIKE '$id' ; ";
                         $result2 = $db->query($query2);
+                        echo $query2;
                         var_dump($result2);
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
