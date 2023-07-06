@@ -59,12 +59,12 @@
                                 }
                             }
                             $nb_zones= count($divValues);
-                            echo $divValues['1'] . $nb_zones;
+                            foreach ($divValues as $divNumber => $value) {
+                                echo "Value of div$divNumber: $value\n";
+                            }
+                            echo "\n $nb_zones";
                             // la variable nb_zones contient le nombre de zones pour ce template et la variable divValues determine le choix de l'utilisateur pour chaque zone
                         }
-
-                        
-
                         // l'utilisateur choisi les paramètres de son modèle
                         else{
 
