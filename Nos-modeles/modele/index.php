@@ -16,23 +16,18 @@
         }
         function find_highest_zone($template) {
             $highestZone = 0;
-        
-            // Find all div classes starting with "div" followed by a number
             preg_match_all('/div(\d+)/i', $template, $matches);
         
             if (!empty($matches[1])) {
-                // Get the highest zone number
                 $zoneNumbers = $matches[1];
                 $highestZone = max($zoneNumbers);
             }
-        
-            // Output the highest zone number
             return $highestZone;
         }
         function DisplayPage(){
 
             if (isset($_GET["Id"])){
-                $id = $_GET["Id"];
+                $id = htmlspecialchars($_GET["Id"]);
                 global $db;
                 $query1 = "SELECT * FROM models_details WHERE id LIKE '$id';";
                 $result1 = $db->query($query1);
@@ -53,7 +48,8 @@
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
-                            echo 's';
+                            // l'utilisateur reçoit son code html css et voit un preview du site
+
                         }
 
                         
