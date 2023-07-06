@@ -62,7 +62,7 @@
                             foreach ($divValues as $divNumber => $value) {
                                 echo "Value of div$divNumber: $value\n";
                             }
-                            echo "\n $nb_zones";
+                            echo " <br>number of zones : $nb_zones";
                             // la variable nb_zones contient le nombre de zones pour ce template et la variable divValues determine le choix de l'utilisateur pour chaque zone
                         }
                         // l'utilisateur choisi les paramètres de son modèle
