@@ -49,6 +49,20 @@
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
                             // l'utilisateur reçoit son code html css et voit un preview du site
+                            $divValues = array();
+                            // Iterate over the post variables
+                            foreach ($_POST as $key => $value) {
+                                // Check if the variable name starts with "div"
+                                if (strpos($key, 'div') === 0) {
+                                    // Get the number part of the variable name
+                                    $divNumber = substr($key, 3);
+                                    $divValues[$divNumber] = $value;
+                                }
+                            }
+                            echo $divValues['1'];
+                            foreach ($divValues as $divNumber => $value) {
+                                echo "Value of div$divNumber: $value\n";
+                            }
 
                         }
 
