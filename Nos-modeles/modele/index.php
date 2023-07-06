@@ -54,16 +54,12 @@
                             foreach ($_POST as $key => $value) {
                                 // Check if the variable name starts with "div"
                                 if (strpos($key, 'div') === 0) {
-                                    // Get the number part of the variable name
                                     $divNumber = substr($key, 3);
                                     $divValues[$divNumber] = $value;
                                 }
                             }
-                            echo $divValues['1'];
-                            foreach ($divValues as $divNumber => $value) {
-                                echo "Value of div$divNumber: $value\n";
-                            }
-
+                            $nb_zones= count($divValues);
+                            echo $divValues['1'] . $nb_zones;
                         }
 
                         
