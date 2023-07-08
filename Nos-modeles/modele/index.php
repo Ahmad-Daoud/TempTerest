@@ -72,11 +72,18 @@
                                         s
                                     </div>
                                     <div class="rowmodifsave">
-                                        <a class="save">Sauvegarder</a>
-                                        <a class="modify">Modifier</a>
+                                        <form action=""></form>
+                                            <input class="save">
+                                            <input class="modify">
+                                        <form action=""></form>
                                     </div>
                                 </div>
-                             
+                                <div class="division-prev-2">
+
+                                </div>
+                                <div class="division-prev-3">
+
+                                </div>
                              <?php
                         }
                         // l'utilisateur choisi les paramètres de son modèle

@@ -80,9 +80,13 @@
 }
 .division-prev-1{
     width: 40%;
+    margin-left: 5%;
 }
 .division-prev-2, .division-prev-3{
-    width: 30%;
+    width: 25%;
+}
+.division-prev-3{
+    margin-left: 2.5%;
 }
 .temp_preview{
     width: 95%;
