@@ -88,7 +88,7 @@
                                 return $html;
                             }
                             $html_bf = $row["html_code"];
-                            echo $row["html_code"];
+                            echo $row["html_code"] . $row["id"];
                             echo $html_bf . 'lol';
                             $html_added = addZoneDetails($html_bf);
                             $html = convertHTMLSigns($html_added);
