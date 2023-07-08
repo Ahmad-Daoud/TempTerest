@@ -94,9 +94,11 @@
 }
 .save{
     width: 45%;
+    float: left;
 }
 .modify{
     width: 45%;
+    float: left;
     margin-left: 10%;
 }
 .modify, .save, .rowmodifsave, .temp_preview, .division-prev-1, .division-prev-2, .division-prev-3{
