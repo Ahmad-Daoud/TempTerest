@@ -116,7 +116,7 @@
                                     <div class="division2row2">
                                         <?php 
                                         $converted = str_replace('&gt;', "&gt; <br> ", $html);
-                                        $converted = str_replace('&lt/;', "<br>&lt;");
+                                        $converted = str_replace('&lt/;', "<br>&lt;", $converted);
                                         $converted = str_replace(['&gt;&lt;', '&gt;', '&lt;'], ['&gt;<br>&emsp;&lt;', '&gt;', '&lt;'], $converted);                                        
                                         echo $converted;
                                     ?>
