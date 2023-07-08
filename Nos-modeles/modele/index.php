@@ -95,6 +95,7 @@
                             $html_added = addZoneDetails($html_bf);
                             $html = convertHTMLSigns($html_added);
                             $css = $row["css_code"];
+                            $num = find_highest_zone($html_bf);
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
