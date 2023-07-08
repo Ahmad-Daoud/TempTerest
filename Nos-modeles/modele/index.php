@@ -85,7 +85,7 @@
                                     if ($divNumber <= $maxZoneNumber && isset($divVariable)) {
                                         $divValue = $_POST[$divVariable];        
                                         if ($divValue === 'text') {
-                                            return '<div class="' . $class . '">'. 'text value here '. '</div>';
+                                            return '<div class="' . $class . ' text'. $divNumber.'">'. 'text value here '. '</div>';
                                         } elseif ($divValue === 'img') {
                                             return '<div class="' . $class . '"><img src="" class="img'. $divNumber .'" alt=" ' . 'alt-desc' . '"></div>';
                                         }
