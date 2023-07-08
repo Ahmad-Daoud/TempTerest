@@ -69,7 +69,7 @@
                              
                                 <div class="division-prev-1">
                                     <div class="temp_preview">
-                                        s
+                                        
                                     </div>
                                     <div class="rowmodifsave">
                                         <form action=""></form>
