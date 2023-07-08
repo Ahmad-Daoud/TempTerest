@@ -54,6 +54,7 @@
                         while ($row = $result2->fetch_assoc()) {
                             $num = find_highest_zone($row["html_code"]);
                             $html = convertHTMLSigns($row["html_code"]);
+                            $css = $row["css_code"];
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
@@ -107,7 +108,7 @@
                                     </div>
                                     <div class="division3row2">
                                         <?php 
-                                        
+                                            echo $css;
                                         ?>
                                     </div>     
                                 </div>
