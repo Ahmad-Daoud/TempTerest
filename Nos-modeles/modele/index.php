@@ -8,8 +8,11 @@
 </head>
 <body>
     <?php
+    
         require("../../layout/header.php");
         require("../../model/model.php");
+        $search = array('&', '<', '>', '"');
+        $replace = array('&amp;', '&lt;', '&gt;', '&quot;');
         Check_Account_TF();
         function DisplayLoginPage(){
             require("../../view/login.php");
@@ -94,9 +97,8 @@
                                     </div>
                                     <div class="division2row2">
                                         <?php 
-                                        $convertedhtml = convertHTMLSigns($html);
-                                        $escapedHTML = str_replace('<?php', '&lt;?php', $convertedHTML);
-                                        echo $escapedHTML;
+                                        $converted = str_replace($search, $replace, $html);
+                                        echo $converted;
                                     ?>
                                     </div>
                                 </div>
