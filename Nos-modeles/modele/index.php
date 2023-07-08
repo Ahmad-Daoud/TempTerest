@@ -87,7 +87,7 @@
                                 <div class="division-prev-2">
                                     <div class="division2row1">
                                         <div class="htmlcodetitle"> CODE HTML </div>
-                                        <button class="htmlcopybutton" onclick="copyHtmlFunction"></button>
+                                        <button class="htmlcopybutton" onclick="copyHtmlFunction"> Copier </button>
                                     </div>
                                     <div class="division2row2">
                                         <?php 
@@ -99,7 +99,7 @@
                                 <div class="division-prev-3">
                                     <div class="division3row1">
                                         <div class="csscodetitle"> CODE CSS </div>
-                                        <button class="csscopybutton" onclick="copyCssFunction"></button>
+                                        <button class="csscopybutton" onclick="copyCssFunction"> Copier </button>
                                     </div>
                                     <div class="division3row2">
                                         <?php 
