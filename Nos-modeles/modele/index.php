@@ -57,6 +57,14 @@
                         $query2 = "SELECT * FROM model_code WHERE model_id LIKE '$id' ; ";
                         $result2 = $db->query($query2);
                         while ($row = $result2->fetch_assoc()) {
+                            $html_bf = $row["html_code"];
+                            $css = $row["css_code"];
+                            $num = find_highest_zone($html_bf);
+                        }
+                        // l'utilisateur a déjà choisi les paramètres de son modèle
+                        if (isset($_POST["div1"])){
+
+
                             function addZoneDetails($html) {
                                 $divs = array();
                                 // avoir un array avec les valeurs de chaque variable $_POST["div"]
@@ -96,18 +104,11 @@
                                 }, $html);
                                 return $html;
                             }
-                            $html_bf = $row["html_code"];
                             $html_added = addZoneDetails($html_bf);
                             $html = convertHTMLSigns($html_added);
-                            $css = $row["css_code"];
-                            $num = find_highest_zone($html_bf);
-                        }
-                        // l'utilisateur a déjà choisi les paramètres de son modèle
-                        if (isset($_POST["div1"])){
                             // l'utilisateur reçoit son code html css et voit un preview du site
                             $divValues = array();
                              ?>  
-                             
                                 <div class="division-prev-1">
                                     <div class="temp_preview">
                                         <?php  ?>
