@@ -53,16 +53,16 @@
                             // Iterate over the post variables
                             foreach ($_POST as $key => $value) {
                                 // Check if the variable name starts with "div"
-                                if (strpos($key, 'div') === 0) {
-                                    $divNumber = substr($key, 3);
-                                    $divValues[$divNumber] = $value;
-                                }
-                            }
-                            $nb_zones= count($divValues);
-                            foreach ($divValues as $divNumber => $value) {
-                                echo "Value of div$divNumber: $value\n";
-                            }
-                            echo " <br>number of zones : $nb_zones";
+                                                //     if (strpos($key, 'div') === 0) {
+                                                //         $divNumber = substr($key, 3);
+                                                //         $divValues[$divNumber] = $value;
+                                                //     }
+                                                // }
+                                                // $nb_zones= count($divValues);
+                                                // foreach ($divValues as $divNumber => $value) {
+                                                //     echo "Value of div$divNumber: $value\n";
+                                                // }
+                                                // echo " <br>number of zones : $nb_zones";
                             // la variable nb_zones contient le nombre de zones pour ce template et la variable divValues determine le choix de l'utilisateur pour chaque zone
 
                              ?>  
