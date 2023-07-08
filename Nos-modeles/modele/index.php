@@ -33,6 +33,15 @@
             $converted = str_replace($search, $replace, $html);
             return $converted;
         }
+
+
+
+                return $matches[0]; 
+            }, $html);
+            return $html;
+        }
+
+
         function DisplayPage(){
 
             if (isset($_GET["Id"])){
@@ -52,30 +61,46 @@
                         $query2 = "SELECT * FROM model_code WHERE model_id LIKE '$id' ; ";
                         $result2 = $db->query($query2);
                         while ($row = $result2->fetch_assoc()) {
-                            $num = find_highest_zone($row["html_code"]);
-                            $html = convertHTMLSigns($row["html_code"]);
+                            function addZoneDetails($html) {
+                                $divs = array();
+                                // avoir un array avec les valeurs de chaque variable $_POST["div"]
+                                foreach ($_POST as $key => $value) {
+                                    if (strpos($key, 'div') === 0) {
+                                        $divNumber = substr($key, 3);
+                                        $divs[$divNumber] = htmlspecialchars($value);
+                                    }
+                                }
+                                // ajouter le texte pour chaque zone selon les valeurs choisies dans la page précédente
+                                $pattern = '/<div\s+class="([^"]*\bzone(\d+)\b[^"]*)"><\/div>/';
+                                preg_match_all($pattern, $html, $matches);
+                                $maxZoneNumber = max($matches[2]);
+                            
+                                // remplacement du texte
+                                $html = preg_replace_callback($pattern, function ($matches) use ($maxZoneNumber, $divs) {
+                                    $class = $matches[1];
+                                    $divNumber = $matches[2];
+                                    $divVariable = 'div' . $divNumber;
+                                    if ($divNumber <= $maxZoneNumber && isset($divs[$divVariable])) {
+                                        $divValue = $divs[$divVariable];
+                                        if ($divValue === 'text') {
+                                            return '<div class="' . $class . '">Text content for ' . $class . '</div>';
+                                        } elseif ($divValue === 'img') {
+                                            return '<div class="' . $class . '"><img src="path_to_image.jpg" alt="Image for ' . $class . '"></div>';
+                                        }
+                                    }
+                                }, $html);
+                                return $html;
+                            }
                             $html_bf = $row["html_code"];
+                            $num = find_highest_zone($row["html_code"]);
+                            $html_added = addZoneDetails($html_bf)
+                            $html = convertHTMLSigns($html_added);
                             $css = $row["css_code"];
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
                             // l'utilisateur reçoit son code html css et voit un preview du site
                             $divValues = array();
-                            // Iterate over the post variables
-                                // foreach ($_POST as $key => $value) {
-                                // Check if the variable name starts with "div"
-                                                //     if (strpos($key, 'div') === 0) {
-                                                //         $divNumber = substr($key, 3);
-                                                //         $divValues[$divNumber] = $value;
-                                                //     }
-                                                // }
-                                                // $nb_zones= count($divValues);
-                                                // foreach ($divValues as $divNumber => $value) {
-                                                //     echo "Value of div$divNumber: $value\n";
-                                                // }
-                                                // echo " <br>number of zones : $nb_zones";
-                            // la variable nb_zones contient le nombre de zones pour ce template et la variable divValues determine le choix de l'utilisateur pour chaque zone
-
                              ?>  
                              
                                 <div class="division-prev-1">
