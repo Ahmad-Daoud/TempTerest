@@ -83,7 +83,7 @@
                                     $divNumber = $matches[2];
                                     $divVariable = 'div' . $divNumber; 
                                     if ($divNumber <= $maxZoneNumber && isset($divVariable)) {
-                                        $divValue = $divVariable;        
+                                        $divValue = $_POST[$divVariable];        
                                         echo 'ss3';           
                                         echo $divValue;
                                         if ($divValue === 'text') {
