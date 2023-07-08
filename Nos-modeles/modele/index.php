@@ -90,12 +90,10 @@
                                         <button class="htmlcopybutton" onclick="copyHtmlFunction"></button>
                                     </div>
                                     <div class="division2row2">
-                                        <div class="htmlcode">
-                                            <?php 
-                                            $convertedhtml = convertHTMLSigns($html);
-                                            echo $convertedhtml;
-                                            ?>
-                                        </div>
+                                        <?php 
+                                        $convertedhtml = convertHTMLSigns($html);
+                                        echo $convertedhtml;
+                                    ?>
                                     </div>
                                 </div>
                                 <div class="division-prev-3">
