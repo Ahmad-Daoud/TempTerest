@@ -72,8 +72,8 @@
                                         s
                                     </div>
                                     <div class="rowmodifsave">
-                                        <a class="save">sbigudhiuhfdiugdsihufhudushdfuihfdsuhifdsuidfsuihsdfiufsdsfduhuisdfuihsfdhiufsduihfsdhiufsdihufsduhisfdiuhfsdiuhsfduhifsdiuhfsdiuhfsdihusdfiuhsdfihusdfhusdfuihuifhdshuidfhuidsfiuhfdsiuhsfdiuhfdskhjbdvflhkjvbisudgiyugghcvfeyuffgfdbvuhiuyzgbknfdgs hvfduihgdsiufgsdihsdgfdgydfglifbsdifjhkvbdsfhjkvsdilhv</a>
-                                        <a class="modify">s</a>
+                                        <a class="save">Sauvegarder</a>
+                                        <a class="modify">Modifier</a>
                                     </div>
                                 </div>
                              
