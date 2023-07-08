@@ -113,9 +113,11 @@
     border: solid 2px gray;
 }
 .htmlcopybutton{
+    float: left;
     width:30%;
 }
 .htmlcodetitle{
+    float: left;
     text-align: center;
     width:70%;
 }
