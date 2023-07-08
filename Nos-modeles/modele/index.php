@@ -104,8 +104,8 @@
                                         <?php  ?>
                                     </div>
                                     <div class="rowmodifsave">
-                                        <form action=""><input class="save" type="submit" placeholder="Sauvegarder"></form>
-                                        <form action=""><input class="modify" type="submit" placeholder="Modifier"></form>
+                                        <form action=""><input class="save" type="submit" value="Sauvegarder"></form>
+                                        <form action=""><input class="modify" type="submit" name="Modifier"></form>
                                     </div>
                                 </div>
                                 <div class="division-prev-2">
