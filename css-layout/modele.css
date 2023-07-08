@@ -124,6 +124,7 @@
     float: left;
     width:30%;
     height : 100%;
+    font-size : 3vh;
 }
 .htmlcodetitle, .csscodetitle{
     float: left;
