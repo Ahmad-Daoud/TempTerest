@@ -95,7 +95,8 @@
                                     <div class="division2row2">
                                         <?php 
                                         $convertedhtml = convertHTMLSigns($html);
-                                        echo $convertedhtml;
+                                        $escapedHTML = str_replace('<?php', '&lt;?php', $convertedHTML);
+                                        echo $escapedHTML;
                                     ?>
                                     </div>
                                 </div>
