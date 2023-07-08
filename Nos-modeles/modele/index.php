@@ -67,7 +67,6 @@
 
 
                             function addZoneDetails($html) {
-                                echo $html;
                                 $divs = array();
                                 // avoir un array avec les valeurs de chaque variable $_POST["div"]
                                 foreach ($_POST as $key => $value) {
@@ -99,6 +98,7 @@
                                         }
                                     }
                                 }, $html);
+                                echo $html;
                                 return $html;
                             }
                             $html_added = addZoneDetails($html_bf);
