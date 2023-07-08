@@ -107,7 +107,7 @@
     margin-left: 5%;
     height: 100%;
 }
-.modify, .save,.htmlcodetitle, .htmlcopybutton,  .temp_preview, .division-prev-1, .division-prev-2, .division-prev-3{
+.modify, .save,.htmlcodetitle, .htmlcopybutton, .csscopybutton, .csscodetitle,  .temp_preview, .division-prev-1, .division-prev-2, .division-prev-3{
     border: solid 2px gray;
 }
 .division2row1{
