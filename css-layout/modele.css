@@ -99,12 +99,13 @@
 .save{
     width: 45%;
     float: left;
+    margin-left :5%;
     height: 100%;
 }
 .modify{
     width: 45%;
     float: left;
-    margin-left: 10%;
+    margin-left: 5%;
     height: 100%;
 }
 .modify, .save, .rowmodifsave, .temp_preview, .division-prev-1, .division-prev-2, .division-prev-3{
