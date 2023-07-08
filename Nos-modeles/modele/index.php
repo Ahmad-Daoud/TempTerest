@@ -108,12 +108,13 @@
                                     </div>
                                     <div class="division3row2">
                                         <?php 
-                                            // Split the string into lines
-                                            $lines = explode("\n", $css);
+                                            $lines = preg_split('/\R/', $css);
+
                                             // Iterate through each line
-                                            foreach ($lines as $lineNumber => $line) {
+                                            foreach ($lines as $line) {
+                                                // Detect opening or closing curly bracket or semicolon
                                                 if (strpos($line, '{') !== false || strpos($line, '}') !== false || strpos($line, ';') !== false) {
-                                                    echo $lineNumber + 1 . ': ' . $line . PHP_EOL;
+                                                    echo $line . PHP_EOL;
                                                 }
                                             }
                                         ?>
