@@ -96,7 +96,15 @@
                                     ?></div>
                                 </div>
                                 <div class="division-prev-3">
-                                                    
+                                    <div class="division3row1">
+                                        <div class="csscodetitle"></div>
+                                        <button class="csscopybutton" onclick="copyCssFunction"></button>
+                                    </div>
+                                    <div class="division3row2">
+                                        <?php 
+                                        
+                                        ?>
+                                    </div>     
                                 </div>
                              <?php
                         }

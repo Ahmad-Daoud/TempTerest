@@ -1,3 +1,6 @@
 function copyHtmlFunction(){
+
+}
+function copyCssFunction(){
     
 }

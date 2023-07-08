@@ -116,12 +116,29 @@
 .division2row2{
     overflow: auto;
 }
+.division3row1{
+    height: 15%;
+}
+.division3row2{
+    overflow: auto;
+}
 .htmlcopybutton{
     float: left;
     width:30%;
     height : 100%;
 }
 .htmlcodetitle{
+    float: left;
+    text-align: center;
+    width:70%;
+    height : 100%;
+}
+.csscopybutton{
+    float: left;
+    width:30%;
+    height : 100%;
+}
+.csscodetitle{
     float: left;
     text-align: center;
     width:70%;
