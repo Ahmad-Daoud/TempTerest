@@ -119,7 +119,7 @@
                                         <?php 
                                         $converted = str_replace($search, $replace, $html);
                                         $converted = str_replace('&gt;', "&gt; <br> ", $converted);
-                                        $converted = preg_replace('/&gt;&lt;/', "&gt;<br> &emsp;&lt; ssss", $converted);
+                                        $converted = str_replace('/&gt;&lt;/', "&gt;<br> &emsp;&lt; ssss", $converted);
                                         echo $converted;
                                     ?>
                                     </div>
