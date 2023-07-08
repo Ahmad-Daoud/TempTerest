@@ -66,11 +66,15 @@
                                         $divs[$divNumber] = htmlspecialchars($value);
                                     }
                                 }
+                                // Output the assigned values for debugging
+                                echo "Assigned Values:<br>";
+                                foreach ($divs as $divNumber => $divValue) {
+                                    echo "div" . $divNumber . ": " . $divValue . "<br>";
+                                }
                                 // ajouter le texte pour chaque zone selon les valeurs choisies dans la page précédente
                                 $pattern = '/<div\s+class="([^"]*\bzone(\d+)\b[^"]*)"><\/div>/';
                                 preg_match_all($pattern, $html, $matches);
                                 $maxZoneNumber = max($matches[2]);
-                            
                                 // remplacement du texte
                                 $html = preg_replace_callback($pattern, function ($matches) use ($maxZoneNumber, $divs) {
                                     $class = $matches[1];
@@ -88,8 +92,6 @@
                                 return $html;
                             }
                             $html_bf = $row["html_code"];
-                            echo $row["html_code"] . $row["id"];
-                            echo $html_bf . 'lol';
                             $html_added = addZoneDetails($html_bf);
                             $html = convertHTMLSigns($html_added);
                             $css = $row["css_code"];
