@@ -27,6 +27,13 @@
             }
             return $highestZone;
         }
+        function convertHTMLSigns($html) {
+            $search = array('&', '<', '>', '"');
+            $replace = array('&amp;', '&lt;', '&gt;', '&quot;');
+            $converted = str_replace($search, $replace, $html);
+            echo $converted;
+            return $converted;
+        }
         function DisplayPage(){
 
             if (isset($_GET["Id"])){
