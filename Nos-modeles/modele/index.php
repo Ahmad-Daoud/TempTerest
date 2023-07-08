@@ -71,6 +71,11 @@
                                 foreach ($divs as $divNumber => $divValue) {
                                     echo "div" . $divNumber . ": " . $divValue . "<br>";
                                 }
+                                // Output the assigned values for debugging
+                                echo "Assigned Values:<br>";
+                                foreach ($divs as $divNumber => $divValue) {
+                                    echo "div" . $divNumber . ": " . $divValue . "<br>";
+                                }
                                 // ajouter le texte pour chaque zone selon les valeurs choisies dans la page précédente
                                 $pattern = '/<div\s+class="([^"]*\bzone(\d+)\b[^"]*)"><\/div>/';
                                 preg_match_all($pattern, $html, $matches);
