@@ -114,12 +114,14 @@
                                         <button class="htmlcopybutton" onclick="copyHtmlFunction"> Copier </button>
                                     </div>
                                     <div class="division2row2">
+                                    <pre>
                                         <?php 
                                         $converted = str_replace('&gt;', "&gt; <br> ", $html);
                                         $converted = str_replace('&lt/;', "<br>&lt;", $converted);
                                         $converted = str_replace(['&gt;&lt;', '&gt;', '&lt;'], ['&gt;<br>&emsp;&lt;', '&gt;', '&lt;'], $converted);                                        
                                         echo $converted;
                                     ?>
+                                    </pre>
                                     </div>
                                 </div>
                                 <div class="division-prev-3">
