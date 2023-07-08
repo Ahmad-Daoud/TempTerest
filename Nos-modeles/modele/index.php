@@ -27,8 +27,7 @@
             }
             return $highestZone;
         }
-        function convertHTMLSigns($html) {
-        }
+        
         function DisplayPage(){
 
             if (isset($_GET["Id"])){
