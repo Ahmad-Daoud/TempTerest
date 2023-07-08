@@ -82,7 +82,6 @@
 }
 .division-prev-2, .division-prev-3{
     width: 25%;
-    overflow: auto;
     margin-left: 2.5%;
 }
 .temp_preview{
@@ -90,7 +89,6 @@
     height: 70%;
     margin-left: 2.5%;
     margin-top: 3%;
-    overflow: auto;
 }
 .rowmodifsave{
     width: 95%;
@@ -114,6 +112,9 @@
 }
 .division2row1{
     height: 15%;
+}
+.division2row2{
+    overflow: auto;
 }
 .htmlcopybutton{
     float: left;
