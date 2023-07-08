@@ -61,7 +61,6 @@
                             $html_bf = $row["html_code"];
                             $css = $row["css_code"];
                             $num = find_highest_zone($html_bf);
-                            echo $num;
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
@@ -75,11 +74,6 @@
                                         $divNumber = substr($key, 3);
                                         $divs[$divNumber] = htmlspecialchars($value);
                                     }
-                                }
-                                // Output the assigned values for debugging
-                                echo "Assigned Values:<br>";
-                                foreach ($divs as $divNumber => $divValue) {
-                                    echo "div" . $divNumber . ": " . $divValue . "<br>";
                                 }
                                 // Output the assigned values for debugging
                                 echo "Assigned Values:<br>";
