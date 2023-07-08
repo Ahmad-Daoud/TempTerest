@@ -85,6 +85,7 @@
                                     if ($divNumber <= $maxZoneNumber && isset($divVariable)) {
                                         $divValue = $divVariable;        
                                         echo 'ss3';           
+                                        echo $divValue;
                                         if ($divValue === 'text') {
                                             return '<div class="' . $class . '">Text content for ' . $class . '</div>';
                                             echo 'ss1';
