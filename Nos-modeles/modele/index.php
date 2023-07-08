@@ -19,7 +19,7 @@
         }
         function find_highest_zone($template) {
             $highestZone = 0;
-            preg_match_all('/div(\d+)/i', $template, $matches);
+            preg_match_all('/zone(\d+)/i', $template, $matches);
         
             if (!empty($matches[1])) {
                 $zoneNumbers = $matches[1];
@@ -33,6 +33,7 @@
             $converted = str_replace($search, $replace, $html);
             return $converted;
         }
+        
 
 
 
