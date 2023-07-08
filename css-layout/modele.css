@@ -38,9 +38,6 @@
     text-align: left;
     background-color: whitesmoke ;
 }
-.titre1{
-
-}
 .type{
     font-size: 16px;
     opacity: 80%;
@@ -92,6 +89,7 @@
     height: 70%;
     margin-left: 2.5%;
     margin-top: 3%;
+    overflow: auto;
 }
 .rowmodifsave{
     width: 95%;
