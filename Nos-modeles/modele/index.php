@@ -114,7 +114,7 @@
                                             foreach ($lines as $line) {
                                                 // Detect opening or closing curly bracket or semicolon
                                                 if (strpos($line, '{') !== false || strpos($line, '}') !== false || strpos($line, ';') !== false) {
-                                                    echo $line . PHP_EOL;
+                                                    echo $line . "<br>";
                                                 }
                                             }
                                         ?>
