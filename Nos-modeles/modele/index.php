@@ -64,11 +64,8 @@
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
-
-
                             function addZoneDetails($html) {
                                 $divs = array();
-                            
                                 // avoir un array avec les valeurs de chaque variable $_POST["div"]
                                 foreach ($_POST as $key => $value) {
                                     if (strpos($key, 'div') === 0) {
@@ -76,27 +73,17 @@
                                         $divs[$divNumber] = htmlspecialchars($value);
                                     }
                                 }
-                            
-                                // Output the assigned values for debugging
-                                echo "Assigned Values:<br>";
-                                foreach ($divs as $divNumber => $divValue) {
-                                    echo "div" . $divNumber . ": " . $divValue . "<br>";
-                                }
-                            
                                 // ajouter le texte pour chaque zone selon les valeurs choisies dans la page précédente
                                 $pattern = '/<div\s+class="([^"]*\bzone(\d+)\b[^"]*)"><\/div>/';
                                 preg_match_all($pattern, $html, $matches);
                                 $maxZoneNumber = max($matches[2]);
-                            
                                 // remplacement du texte
                                 $html = preg_replace_callback($pattern, function ($matches) use ($maxZoneNumber, $divs) {
                                     $class = $matches[1];
                                     $divNumber = $matches[2];
                                     $divVariable = 'div' . $divNumber; 
                                     if ($divNumber <= $maxZoneNumber && isset($divVariable)) {
-                                        $divValue = $divVariable;
-                                        echo "Replacing zone" . $divNumber . " with " . $divValue . "<br>"; // Debug statement
-                            
+                                        $divValue = $divVariable;                            
                                         if ($divValue === 'text') {
                                             return '<div class="' . $class . '">Text content for ' . $class . '</div>';
                                         } elseif ($divValue === 'img') {
@@ -104,6 +91,7 @@
                                         }
                                     }
                                 }, $html);
+                                echo $html;
                                 return $html;
                             }
                             $html_added = addZoneDetails($html_bf);
