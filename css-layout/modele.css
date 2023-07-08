@@ -119,6 +119,7 @@
 }
 .division3row2{
     overflow: auto;
+    height:90%;
 }
 .htmlcopybutton, .csscopybutton{
     float: left;

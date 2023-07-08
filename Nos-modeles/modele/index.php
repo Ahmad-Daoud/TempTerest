@@ -60,7 +60,6 @@
                         if (isset($_POST["div1"])){
                             // l'utilisateur reçoit son code html css et voit un preview du site
                             $divValues = array();
-                            echo'sssss';
                             // Iterate over the post variables
                                 // foreach ($_POST as $key => $value) {
                                 // Check if the variable name starts with "div"
