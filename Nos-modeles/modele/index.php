@@ -84,14 +84,12 @@
                                     $divVariable = 'div' . $divNumber; 
                                     if ($divNumber <= $maxZoneNumber && isset($divVariable)) {
                                         $divValue = $_POST[$divVariable];        
-                                        echo 'ss3';           
-                                        echo $divValue;
                                         if ($divValue === 'text') {
-                                            return '<div class="' . $class . '">Text content for ' . $class . '</div>';
+                                            return '<div class="' . $class . '">'. 'text value here '. '</div>';
                                             echo 'ss1';
                                         } elseif ($divValue === 'img') {
                                             echo 'ss2';
-                                            return '<div class="' . $class . '"><img src="path_to_image.jpg" alt="Image for ' . $class . '"></div>';
+                                            return '<div class="' . $class . '"><img src="" alt="Image for ' . $class . '"></div>';
                                         }
                                     }
                                 }, $html);
