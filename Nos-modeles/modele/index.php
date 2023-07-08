@@ -116,7 +116,7 @@
                                                     echo $line . "<br>";
                                                 }
                                                 else if (strpos($line, ';') !== false){
-                                                    echo  $line . "<br>". "\t"  ;
+                                                    echo  $line . "<br>". "\t s"  ;
                                                 }
                                             }
                                         ?>
