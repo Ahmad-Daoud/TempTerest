@@ -60,6 +60,7 @@
                             $html_bf = $row["html_code"];
                             $css = $row["css_code"];
                             $num = find_highest_zone($html_bf);
+                            echo $num;
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
