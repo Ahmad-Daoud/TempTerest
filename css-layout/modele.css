@@ -74,3 +74,30 @@
     padding-bottom: 60px;
     text-align: left;
 }
+.division-prev-1, .division-prev-2, .division-prev-3{
+    float: left;
+    height: 80%;
+}
+.division-prev-1{
+    width: 40%;
+}
+.division-prev-2, .division-prev-3{
+    width: 30%;
+}
+.temp_preview{
+    width: 95%;
+    height: 70%;
+}
+.rowmodifsave{
+    width: 95%;
+}
+.save{
+    width: 45%;
+}
+.modify{
+    width: 45%;
+    margin-left: 10%;
+}
+.modify, .save, .rowmodifsave, .temp_preview, .division-prev-1, .division-prev-2, .division-prev-3{
+    border: solid 2px gray;
+}

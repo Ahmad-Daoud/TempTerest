@@ -64,6 +64,20 @@
                             }
                             echo " <br>number of zones : $nb_zones";
                             // la variable nb_zones contient le nombre de zones pour ce template et la variable divValues determine le choix de l'utilisateur pour chaque zone
+
+                             ?>  
+                             
+                                <div class="division-prev-1">
+                                    <div class="temp_preview">
+                                        s
+                                    </div>
+                                    <div class="rowmodifsave">
+                                        <a class="save">s</a>
+                                        <a class="modify">s</a>
+                                    </div>
+                                </div>
+                             
+                             <?php
                         }
                         // l'utilisateur choisi les paramètres de son modèle
                         else{
@@ -165,5 +179,7 @@
 
 
     ?>
+
+    <script src="model.js"></script>
 </body>
 </html>
