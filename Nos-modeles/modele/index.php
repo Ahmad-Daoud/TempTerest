@@ -112,8 +112,11 @@
                                             // Iterate through each line
                                             foreach ($lines as $line) {
                                                 // Detect opening or closing curly bracket or semicolon
-                                                if (strpos($line, '{') !== false || strpos($line, '}') !== false || strpos($line, ';') !== false) {
+                                                if (strpos($line, '{') !== false || strpos($line, '}') !== false) {
                                                     echo $line . "<br>";
+                                                }
+                                                else if (strpos($line, ';') !== false){
+                                                    echo  $line . "<br>".str_repeat(' ', 3) ;
                                                 }
                                             }
                                         ?>
