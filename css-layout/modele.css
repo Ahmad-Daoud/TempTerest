@@ -120,25 +120,15 @@
 .division3row2{
     overflow: auto;
 }
-.htmlcopybutton{
+.htmlcopybutton, .csscopybutton{
     float: left;
     width:30%;
     height : 100%;
 }
-.htmlcodetitle{
+.htmlcodetitle, .csscodetitle{
     float: left;
     text-align: center;
     width:70%;
     height : 100%;
-}
-.csscopybutton{
-    float: left;
-    width:30%;
-    height : 100%;
-}
-.csscodetitle{
-    float: left;
-    text-align: center;
-    width:70%;
-    height : 100%;
+    font-size: 3vh;
 }
