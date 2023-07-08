@@ -116,7 +116,7 @@
                                                     echo $line . "<br>";
                                                 }
                                                 else if (strpos($line, '{') !== false || strpos($line, ';') !== false){
-                                                    echo  "<br>". "\t" . $line   ;
+                                                    echo  $line . "<br>". "\t"  ;
                                                 }
                                             }
                                         ?>
