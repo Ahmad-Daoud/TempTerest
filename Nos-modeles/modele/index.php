@@ -118,7 +118,7 @@
                                     <div class="division2row2">
                                         <?php 
                                         $converted = str_replace($search, $replace, $html);
-                                        $converted = str_replace('&gt;', "&gt; \n ", $converted);
+                                        $converted = str_replace('&gt;', "&gt; <br> ", $converted);
                                         echo $converted;
                                     ?>
                                     </div>
