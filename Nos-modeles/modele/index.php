@@ -118,7 +118,7 @@
                                     <div class="division2row2">
                                         <?php 
                                         $converted = str_replace($search, $replace, $html);
-                                        $converted = str_replace('&gt;', "&gt;\n", $converted);
+                                        $converted = str_replace('&gt;', "&gt;\n ss", $converted);
                                         echo $converted;
                                     ?>
                                     </div>
@@ -144,7 +144,7 @@
                                             }
                                         ?>
                                     </div>     
-                                </div>
+                                </div>  
                              <?php
                         }
                         // l'utilisateur choisi les paramètres de son modèle
