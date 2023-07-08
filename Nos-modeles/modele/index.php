@@ -87,7 +87,7 @@
                                         if ($divValue === 'text') {
                                             return '<div class="' . $class . '">'. 'text value here '. '</div>';
                                         } elseif ($divValue === 'img') {
-                                            return '<div class="' . $class . '"><img src="" alt=" ' . 'alt-desc' . '"></div>';
+                                            return '<div class="' . $class . '"><img src="" class="img'. $divNumber .'" alt=" ' . 'alt-desc' . '"></div>';
                                         }
                                     }
                                 }, $html);
