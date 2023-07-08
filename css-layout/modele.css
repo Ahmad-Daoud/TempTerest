@@ -76,7 +76,7 @@
 }
 .division-prev-1, .division-prev-2, .division-prev-3{
     float: left;
-    height: 80%;
+    height: 80vh;
 }
 .division-prev-1{
     width: 40%;
