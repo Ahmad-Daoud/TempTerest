@@ -91,6 +91,7 @@
                                         }
                                     }
                                 }, $html);
+                                $html = str_replace('>', ">\n", $html);
                                 return $html;
                             }
                             $html_added = addZoneDetails($html_bf);
