@@ -24,6 +24,11 @@
             }
             return $highestZone;
         }
+        function convertHTMLSigns($html) {
+            $search = array('&', '<', '>', '"');
+            $replace = array('&amp;', '&lt;', '&gt;', '&quot;');
+            return str_replace($search, $replace, $html);
+        }
         function DisplayPage(){
 
             if (isset($_GET["Id"])){
@@ -44,7 +49,7 @@
                         $result2 = $db->query($query2);
                         while ($row = $result2->fetch_assoc()) {
                             $num = find_highest_zone($row["html_code"]);
-                            echo $row["html_code"];
+                            $html = convertHTMLSigns($row["html_code"]);
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
@@ -69,7 +74,7 @@
                              
                                 <div class="division-prev-1">
                                     <div class="temp_preview">
-                                        
+                                        <?php  ?>
                                     </div>
                                     <div class="rowmodifsave">
                                         <form action=""></form>
@@ -79,7 +84,11 @@
                                     </div>
                                 </div>
                                 <div class="division-prev-2">
-
+                                    <div class="division2row1"></div>
+                                    <div class="division2row2"><?php 
+                                        $convertedhtml = convertHTMLSigns($html);
+                                        echo $convertedhtml;
+                                    ?></div>
                                 </div>
                                 <div class="division-prev-3">
 
