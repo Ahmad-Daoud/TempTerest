@@ -105,7 +105,7 @@
                                         }
                                     }
                                 }, $html);
-                            
+                                echo $html;
                                 return $html;
                             }
                             $html_added = addZoneDetails($html_bf);
