@@ -112,12 +112,17 @@
 .modify, .save,.htmlcodetitle, .htmlcopybutton,  .temp_preview, .division-prev-1, .division-prev-2, .division-prev-3{
     border: solid 2px gray;
 }
+.division2row1{
+    height: 15%;
+}
 .htmlcopybutton{
     float: left;
     width:30%;
+    height : 100%;
 }
 .htmlcodetitle{
     float: left;
     text-align: center;
     width:70%;
+    height : 100%;
 }
