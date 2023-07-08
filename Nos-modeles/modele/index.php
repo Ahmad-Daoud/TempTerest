@@ -86,14 +86,11 @@
                                         $divValue = $_POST[$divVariable];        
                                         if ($divValue === 'text') {
                                             return '<div class="' . $class . '">'. 'text value here '. '</div>';
-                                            echo 'ss1';
                                         } elseif ($divValue === 'img') {
-                                            echo 'ss2';
                                             return '<div class="' . $class . '"><img src="" alt="Image for ' . $class . '"></div>';
                                         }
                                     }
                                 }, $html);
-                                echo $html;
                                 return $html;
                             }
                             $html_added = addZoneDetails($html_bf);
