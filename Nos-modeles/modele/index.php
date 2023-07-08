@@ -27,7 +27,6 @@
             }
             return $highestZone;
         }
-        
         function DisplayPage(){
 
             if (isset($_GET["Id"])){
@@ -48,7 +47,7 @@
                         $result2 = $db->query($query2);
                         while ($row = $result2->fetch_assoc()) {
                             $num = find_highest_zone($row["html_code"]);
-                            $html = convertHTMLSigns($row["html_code"]);
+                            $html = $row["html_code"];
                         }
                         // l'utilisateur a déjà choisi les paramètres de son modèle
                         if (isset($_POST["div1"])){
