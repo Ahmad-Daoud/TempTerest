@@ -82,7 +82,6 @@
 }
 .division-prev-2, .division-prev-3{
     width: 25%;
-    overflow: auto;
     margin-left: 2.5%;
 }
 .temp_preview{
@@ -108,11 +107,17 @@
     margin-left: 5%;
     height: 100%;
 }
-.modify, .save,.htmlcodetitle, .htmlcopybutton,  .temp_preview, .division-prev-1, .division-prev-2, .division-prev-3{
+.modify, .save,.htmlcodetitle, .htmlcopybutton, .csscopybutton, .csscodetitle,  .temp_preview, .division-prev-1, .division-prev-2, .division-prev-3{
     border: solid 2px gray;
 }
-.division2row1{
-    height: 15%;
+.division2row1, .division3row1{
+    height: 10%;
+}
+.division2row2{
+    overflow: auto;
+}
+.division3row2{
+    overflow: auto;
 }
 .htmlcopybutton{
     float: left;
@@ -120,6 +125,17 @@
     height : 100%;
 }
 .htmlcodetitle{
+    float: left;
+    text-align: center;
+    width:70%;
+    height : 100%;
+}
+.csscopybutton{
+    float: left;
+    width:30%;
+    height : 100%;
+}
+.csscodetitle{
     float: left;
     text-align: center;
     width:70%;
