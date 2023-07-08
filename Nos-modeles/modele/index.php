@@ -85,14 +85,18 @@
                                     </div>
                                 </div>
                                 <div class="division-prev-2">
-                                    <div class="division2row1"></div>
-                                    <div class="division2row2"><?php 
+                                    <div class="division2row1">
+                                        <div class="htmlcodetitle"></div>
+                                        <button class="htmlcopybutton" onclick="copyHtmlFunction"></button>
+                                    </div>
+                                    <div class="division2row2">
+                                        <?php 
                                         $convertedhtml = convertHTMLSigns($html);
                                         echo $convertedhtml;
                                     ?></div>
                                 </div>
                                 <div class="division-prev-3">
-
+                                                    
                                 </div>
                              <?php
                         }
@@ -111,7 +115,7 @@
                                 <div class="details-division1">
                                     <div class="titre1">
                                         <?php
-                                        echo"$titre"; 
+                                          echo"$titre"; 
                                         ?>
                                     </div>
                                     <div class="type">
