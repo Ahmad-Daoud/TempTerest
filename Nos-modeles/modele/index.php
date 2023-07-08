@@ -88,7 +88,7 @@
                                 return $html;
                             }
                             $html_bf = $row["html_code"];
-                            $num = find_highest_zone($row["html_code"]);
+                            echo $row["html_code"];
                             echo $html_bf . 'lol';
                             $html_added = addZoneDetails($html_bf);
                             $html = convertHTMLSigns($html_added);
