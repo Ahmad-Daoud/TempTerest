@@ -92,10 +92,9 @@
                                 $html = preg_replace_callback($pattern, function ($matches) use ($maxZoneNumber, $divs) {
                                     $class = $matches[1];
                                     $divNumber = $matches[2];
-                                    $divVariable = 'div' . $divNumber;
-                                    echo $divs[$divVariable];
-                                    if ($divNumber <= $maxZoneNumber && isset($divs[$divVariable])) {
-                                        $divValue = $divs[$divVariable];
+                                    $divVariable = 'div' . $divNumber; 
+                                    if ($divNumber <= $maxZoneNumber && isset($divVariable)) {
+                                        $divValue = $divVariable;
                                         echo "Replacing zone" . $divNumber . " with " . $divValue . "<br>"; // Debug statement
                             
                                         if ($divValue === 'text') {
