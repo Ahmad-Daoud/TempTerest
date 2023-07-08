@@ -28,7 +28,7 @@
             $search = array('&', '<', '>', '"');
             $replace = array('&amp;', '&lt;', '&gt;', '&quot;');
             $converted = str_replace($search, $replace, $html);
-            echo  htmlspecialchars_decode($converted) . 'lol';
+            echo  htmlspecialchars_decode($converted) . 'lol '. $converted;
         }
         function DisplayPage(){
 
