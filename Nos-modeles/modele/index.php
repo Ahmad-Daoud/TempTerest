@@ -93,7 +93,7 @@
                                     $class = $matches[1];
                                     $divNumber = $matches[2];
                                     $divVariable = 'div' . $divNumber;
-                                    echo $divVariable;
+                                    echo $divs[$divVariable];
                                     if ($divNumber <= $maxZoneNumber && isset($divs[$divVariable])) {
                                         $divValue = $divs[$divVariable];
                                         echo "Replacing zone" . $divNumber . " with " . $divValue . "<br>"; // Debug statement
