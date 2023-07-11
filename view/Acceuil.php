@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="https://adaoud.dev/Tempterest/TempTerest/logo.ico">
 </head>
 <body>
-    Bienvenu(e) à l'acceuil
+    Bienvenu(e)
 <?php
 
 ?>
